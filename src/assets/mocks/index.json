@@ -1,0 +1,80 @@
+{
+
+  "productTitle":[
+    {
+      "imgUrl":"../../static/img/index/wifi.png",
+      "tit": "签证WiFi"
+    },
+    {
+      "imgUrl":"../../static/img/index/travel2.png",
+      "tit": "出境游"
+    },
+    {
+      "imgUrl": "../../static/img/index/pickup.png",
+      "tit": "接送机"
+    },
+    {
+      "imgUrl": "../../static/img/index/ondeday.png",
+      "tit": "一日游"
+    },
+    {
+      "imgUrl":"../../static/img/index/Tourism.png",
+      "tit": "智慧旅游"
+    },
+    {
+      "imgUrl":"../../static/img/index/customization.png",
+      "tit": "定制游"
+    },
+    {
+      "imgUrl":"../../static/img/index/inland.png",
+      "tit": "国内游"
+    },
+    {
+      "imgUrl": "../../static/img/index/free.png",
+      "tit": "自由行"
+    },
+    {
+      "imgUrl": "../../static/img/index/sepcial.png",
+      "tit": "特价游"
+    },
+    {
+      "imgUrl": "../../static/img/index/more.png",
+      "tit": "更多"
+    }
+  ],
+
+  "love":[
+    {
+      "tit": "SUWLHASOO,雪花秀，滋赢肌本润颜水   125mL",
+      "price": 400,
+      "oldPrcie": "已售662件",
+      "imgUrl": "../../static/img/sul2.png",
+      "counter": "INTME365立省40元"
+    },
+    {
+      "tit": "馥蕾诗/大马士革玫瑰花瓣水，250ML",
+      "price": 390,
+      "oldPrcie": "已售730件",
+      "imgUrl": "../../static/img/fresh.png",
+      "counter": "INTME365立省39元"
+    },
+    {
+      "tit": "CLINIQUE/倩碧水，宛若新生水精华，200mL",
+      "price": 250,
+      "oldPrcie": "已售46件",
+      "imgUrl": "../../static/img/clin.png",
+      "counter": "INTME365立省25元"
+    },
+    {
+      "tit": "ESTEElAUDER雅诗兰黛，奢宠白精美美白精华水200mL",
+      "price": 880,
+      "oldPrcie": "已售918件",
+      "imgUrl": "../../static/img/puline.png",
+      "counter": "INTME365立省88元"
+    }
+  ]
+
+
+
+
+}
