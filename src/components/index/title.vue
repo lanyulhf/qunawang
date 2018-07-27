@@ -31,7 +31,7 @@
   }
   .productTitle .productTitleInfo{
     width:0.75rem;
-    height:0.76rem;
+    height:0.7rem;
     display: -webkit-flex;
     -webkit-flex-direction: column;
     -webkit-align-items:center;

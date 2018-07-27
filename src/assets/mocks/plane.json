@@ -1,0 +1,133 @@
+{
+  "goods": [
+    {
+      "pic": "../../static/img/index-goodlist-i1.jpg",
+      "title": "CLINIQUE/倩碧 明肌晶透",
+      "local": "倩碧·西湖银太城",
+      "save": "15.5",
+      "price": "155",
+      "shop": "107",
+      "letter": "包邮"
+    },
+    {
+      "pic": "../../static/img/index-goodlist-i2.jpg",
+      "title": "魅可/MAC柔感哑光唇膏",
+      "local": "魅可·西湖银太城",
+      "save": "17",
+      "price": "170",
+      "shop": "4742",
+      "letter": "包邮"
+    },
+    {
+      "pic": "../../static/img/index-goodlist-i3.jpg",
+      "title": "兰芝水漾清颜爽",
+      "local": "兰芝·西湖银太城",
+      "save": "18.5",
+      "price": "185",
+      "shop": "10",
+      "letter": "包邮"
+    },
+    {
+      "pic": "../../static/img/index-goodlist-i4.jpg",
+      "title": "CLINIQUE/倩碧 明肌晶透",
+      "local": "倩碧·西湖银太城",
+      "save": "15.5",
+      "price": "175",
+      "shop": "107",
+      "letter": "包邮"
+    },
+    {
+      "pic": "../../static/img/index-goodlist-i5.jpg",
+      "title": "银泰百货同款SK-ll",
+      "local": "SK-ll·西湖银太城",
+      "save": "49",
+      "price": "490",
+      "shop": "35",
+      "letter": "包邮"
+    },
+    {
+      "pic": "../../static/img/index-goodlist-i6.jpg",
+      "title": "CLINIQUE/倩碧 明肌晶透",
+      "local": "倩碧·西湖银太城",
+      "save": "15.5",
+      "price": "195",
+      "shop": "107",
+      "letter": "包邮"
+    },
+    {
+      "pic": "../../static/img/index-goodlist-i7.jpg",
+      "title": "CLINIQUE/倩碧 明肌晶透",
+      "local": "倩碧·西湖银太城",
+      "save": "15.5",
+      "price": "115",
+      "shop": "107",
+      "letter": "包邮"
+    },
+    {
+      "pic": "../../static/img/index-goodlist-i8.jpg",
+      "title": "CLINIQUE/倩碧 明肌晶透",
+      "local": "倩碧·西湖银太城",
+      "save": "15.5",
+      "price": "125",
+      "shop": "107",
+      "letter": "包邮"
+    },
+    {
+      "pic": "../../static/img/index-goodlist-i9.jpg",
+      "title": "CLINIQUE/倩碧 明肌晶透",
+      "local": "倩碧·西湖银太城",
+      "save": "15.5",
+      "price": "135",
+      "shop": "107",
+      "letter": "包邮"
+    },
+    {
+      "pic": "../../static/img/index-goodlist-i10.jpg",
+      "title": "CLINIQUE/倩碧 明肌晶透",
+      "local": "倩碧·西湖银太城",
+      "save": "15.5",
+      "price": "255",
+      "shop": "107",
+      "letter": "包邮"
+    },
+    {
+      "pic": "../../static/img/index-goodlist-i11.jpg",
+      "title": "CLINIQUE/倩碧 明肌晶透",
+      "local": "倩碧·西湖银太城",
+      "save": "15.5",
+      "price": "355",
+      "shop": "107",
+      "letter": "包邮"
+    },
+    {
+      "pic": "../../static/img/index-goodlist-i4.jpg",
+      "title": "御颜柔肤水",
+      "local": "苏秘37°·西湖银太城",
+      "save": "15.5",
+      "price": "670",
+      "shop": "9",
+      "letter": "包邮"
+    }
+  ],
+  "product":[
+    {"btitle":"","stitle":"","pic":"../../static/img/index-pro-i1.jpg"},
+    {"btitle":"服装服饰","stitle":"夏日爽购","pic":"../../static/img/index-pro-i2.jpg"},
+    {"btitle":"大牌美妆","stitle":"HR甄选礼盒","pic":"../../static/img/index-pro-i3.jpg"},
+    {"btitle":"运动潮流","stitle":"玩转运动时髦风","pic":"../../static/img/index-pro-i4.jpg"},
+    {"btitle":"珠宝配饰","stitle":"全场199","pic":"../../static/img/index-pro-i5.jpg"},
+    {"btitle":"生活家居","stitle":"精品家纺9折起","pic":"../../static/img/index-pro-i6.jpg"},
+    {"btitle":"内衣馆","stitle":"100元三条","pic":"../../static/img/index-pro-i7.jpg"},
+    {"btitle":"今日值得逛","stitle":"别错过的品牌行动","pic":"../../static/img/index-pro-i8.jpg"}
+  ],
+  "nav":[
+    {"class":"iconfont icon-yiriyou","title":"低价机票"},
+    {"class":"iconfont icon-faxian1","title":"价格提示"},
+    {"class":"iconfont icon-naozhong","title":"降价提醒"},
+    {"class":"iconfont icon-flight","title":"航班动态"},
+    {"class":"iconfont icon-boshimao","title":"学生认证"},
+    {"class":"iconfont icon-ditu","title":"省钱地图"}
+
+  ]
+
+}
+

@@ -5,11 +5,13 @@
     <span><i class="iconfont icon-luotuo"></i></span>
     <span>首页</span>
   </a>
+  <router-link to="/order">
   <a href="">
     <span><i class="iconfont icon-icon-"></i>
 </span>
     <span>订单</span>
   </a>
+  </router-link >
   <a href="">
     <span><i class="iconfont icon-Compass-simple-line-icons"></i></span>
     <span>发现</span>

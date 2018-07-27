@@ -2,29 +2,33 @@
   <div>
     <div class="navigation">
       <div class="navigationIn">
-        <div class="left"><img src="../../assets/img/index/hotel.png" alt="图片"></div>
+        <div class="left">
+         <router-link to="/planeTicket" >
+          <img src="../../assets/img/index/hotel.png" alt="图片">
+         </router-link>
+        </div>
         <div class="center">
           <p >低价机票</p>
-          <p>汽车票.船票</p>
+          <p>汽车票·船票</p>
         </div>
         <div class="right">
           <p>火车票</p>
-          <p>专车.租车</p>
+          <p>专车·租车</p>
         </div>
       </div>
-        <div class="navigationIn " >
+        <div class="navigationIn navCenter" >
         <div class="left"><img src="../../assets/img/index/ticket.png" alt="图片"></div>
         <div class="center">
           <p >特价酒店</p>
           <p>海外酒店</p>
         </div>
         <div class="right">
-          <p>客栈.名宿</p>
+          <p>客栈·名宿</p>
           <p>高端酒店</p>
         </div>
       </div>
 
-      <div class="navigationIn">
+      <div class="navigationIn navRight">
         <div class="left"><img src="../../assets/img/index/travel.png" alt="图片"></div>
         <div class="center">
           <p >景点门票</p>
@@ -32,15 +36,15 @@
         </div>
         <div class="right">
 
-            <router-link to="/post" tag="p">攻略.美食林</router-link>
+            <router-link to="/post" tag="p">攻略·美食林</router-link>
 
           <p>周边游</p>
         </div>
       </div>
       <div class="bottom">
         <span>借钱信用卡</span>
-        <span>保险.索赔</span>
-        <span>购物.外汇</span>
+        <span>保险·索赔</span>
+        <span>购物·外汇</span>
       </div>
     </div>
   </div>
@@ -73,6 +77,13 @@
   margin:0;
   background:#fc5951;
 }
+.navCenter p{
+  background:#04a8f8;
+}
+.navRight p{
+  background:#21cc5e;
+}
+
 .navigationIn .center{
   width:33%;
 }

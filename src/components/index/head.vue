@@ -27,18 +27,30 @@
   .header a{
     color:#626262;
     font-size:0.16rem;
+    line-height:0.34rem;
   }
   .header a:nth-child(1){
     display: flex;
+    background: #f0f0f0;
+    border-radius: 0.15rem;
+    line-height:0.34rem;
+    padding-left: 0.05rem;
+    text-align: center;
   }
 
   .header a:nth-child(2){
-    padding-left: 0.1rem;
-    padding-right: 0.1rem;
+    padding-left: 0.06rem;
+    padding-right: 0.06rem;
     display: flex;
     align-items: center;
     background: #f0f0f0;
     border-radius: 0.15rem;
+  }
+  .header a:nth-child(3){
+    background: #f0f0f0;
+    border-radius: 0.25rem;
+    padding-left: 0.06rem;
+    padding-right: 0.06rem;
   }
   .header a .iconfont{
     font-size:0.22rem;
@@ -49,7 +61,7 @@
     text-indent: 0.04rem;
     background: #f0f0f0;
     margin-left:0.04rem;
-    padding: 0 0.15rem ;
+    padding: 0 0.06rem ;
     outline: none;
     line-height:0.34rem;
     background: url(../../assets/img/index/headerPic1.png) no-repeat right center;
