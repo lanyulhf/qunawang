@@ -3,6 +3,7 @@ const express = require("express")
 const index = require("./src/assets/mocks/index.json")
 const choose = require("./src/assets/mocks/choose.json")
 const plane = require("./src/assets/mocks/plane.json")
+const post = require("./src/assets/mocks/post.json")
 
 const app = express();
 
@@ -19,6 +20,11 @@ app.use("/api/choose",(req,res)=>{
   res.header("Access-Control-Allow-Origin", "*");
   res.json(choose);
 })
+app.use("/api/post",(req,res)=>{
+  res.header("Access-Control-Allow-Origin", "*");
+  res.json(post);
+})
+
 app.use("/api/plane",(req,res)=>{
   res.header("Access-Control-Allow-Origin", "*");
   res.json(plane);

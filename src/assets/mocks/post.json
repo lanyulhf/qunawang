@@ -1,0 +1,246 @@
+{
+  "header":[
+    {
+      "hea_size":"点击进入上海旅图>>"
+    }
+  ],
+  "header02":[
+    {
+      "hea_tit": "上海",
+      "hea_pic":"发旅图"
+    }
+  ],
+  "nav":[
+    {
+      "nav_img":"static/img/post/nav_01.jpg",
+      "nav_tit": "攻略"
+    },
+    {
+      "nav_img":"static/img/post/nav_02.jpg",
+      "nav_tit": "酒店"
+    },
+    {
+      "nav_img":"static/img/post/nav_03.jpg",
+      "nav_tit": "景点"
+    },
+    {
+      "nav_img":"static/img/post/nav_04.jpg",
+      "nav_tit": "玩乐"
+    },
+    {
+      "nav_img":"static/img/post/nav_05.jpg",
+      "nav_tit": "美食林"
+    },
+    {
+      "nav_img":"static/img/post/nav_06.jpg",
+      "nav_tit": "路线导航"
+    },
+    {
+      "nav_img":"static/img/post/nav_07.jpg",
+      "nav_tit": "一日游"
+    },
+    {
+      "nav_img":"static/img/post/nav_08.jpg",
+      "nav_tit": "必体验"
+    },
+    {
+      "nav_img":"static/img/post/nav_09.jpg",
+      "nav_tit": "用车"
+    },
+    {
+      "nav_img":"static/img/post/nav_10.jpg",
+      "nav_tit": "暑假"
+    }
+  ],
+  "remind":[
+    {
+      "remind_img":"static/img/post/huadong_col.jpg",
+      "remind_size":"'惬意盛夏音乐之夜'作为2018'思南露天夜'的系列活动之一,7月14日至8月25日,北京八达岭长城+十三陵定陵或颐和园纯颐和园纯",
+      "remind_qing":"查看详情"
+    },
+    {
+      "remind_img":"static/img/post/huadong_col.jpg",
+      "remind_size":"'惬意盛夏音乐之夜'作为2018'思南露天夜'的系列活动之一,7月14日至8月25日,北京八达岭长城+十三陵定陵或颐和园纯颐和园纯",
+      "remind_qing":"查看详情"
+    }
+  ],
+  "travel":[
+    {
+      "travel_size":"西安",
+      "travel_size02":"上海",
+      "travel_ban":"直飞航班",
+      "travel_shi":"20时30分",
+      "travel_zhi":55,
+      "travel_qian":"￥740",
+      "travel_ban_two":"高速动车",
+      "travel_shi_two":"5时56分",
+      "travel_zhi_two":7,
+      "travel_qian_two":"￥960",
+      "travel_bottom":"28位乘客在上海的大交通旅行经验"
+    }
+  ],
+  "wanfa":[
+  {
+    "wanfa_title":"玩法推荐",
+    "wanfa_cen":[
+      {
+        "wanfa_img":"static/img/post/wanfa01.jpg",
+        "wanfa_size":"上海经典三日游"
+      },
+      {
+        "wanfa_img":"static/img/post/wanfa02.jpg",
+        "wanfa_size":"上海风光一日游"
+      },
+      {
+        "wanfa_img":"static/img/post/wanfa03.jpg",
+        "wanfa_size":"轻松游上海"
+      },
+      {
+        "wanfa_img":"static/img/post/wanfa04.jpg",
+        "wanfa_size":"上海 欢乐游"
+      },
+      {
+        "wanfa_img":"static/img/post/wanfa05.jpg",
+        "wanfa_size":"上海 经典游"
+      }
+    ],
+    "wanfa_for":"337位游客在上海的行程安排经验"
+  }
+],
+  "haowan":[
+    {
+      "wanfa_title":"当地哪好玩",
+      "wanfa_cen":[
+        {
+          "wanfa_img":"static/img/post/haowan01.jpg",
+          "wanfa_size":"上海迪士尼"
+        },
+        {
+          "wanfa_img":"static/img/post/haowan02.jpg",
+          "wanfa_size":"田子坊"
+        },
+        {
+          "wanfa_img":"static/img/post/haowan03.jpg",
+          "wanfa_size":"外滩"
+        },
+        {
+          "wanfa_img":"static/img/post/haowan04.jpg",
+          "wanfa_size":"上海城隍庙"
+        },
+        {
+          "wanfa_img":"static/img/post/haowan05.jpg",
+          "wanfa_size":"东方明珠"
+        }
+      ],
+      "wanfa_for":"77位游客在上海的景点玩乐经验"
+    }
+  ],
+  "zhinan":[
+    {
+      "zhinan_tit":"上海拍照指南|各区拍照地点大公开(附美食攻略)",
+      "zhinan_pic":"static/img/post/zhinan01.jpg"
+    },
+    {
+      "zhinan_tit":"#周末去哪#梧桐树、弄堂里，小洋房、感受老上海的旧时光",
+      "zhinan_pic":"static/img/post/zhinan02.jpg"
+    }
+  ],
+  "wanle": [
+    {
+      "wanle_title":"当地哪好玩",
+      "wanle_cen":[
+        {
+          "wanle_img":"static/img/post/haowan01.jpg",
+          "wanle_size":"上海迪士尼乐园特色专人陪同,体验...",
+          "wanle_qian":"￥950"
+        },
+        {
+          "wanle_img":"static/img/post/haowan02.jpg",
+          "wanle_size":"上海参团上海一日游登东方明珠",
+          "wanle_qian":"￥250"
+        },
+        {
+          "wanle_img":"static/img/post/haowan03.jpg",
+          "wanle_size":"<西塘乌镇西栏一日游>",
+          "wanle_qian":"￥930"
+        },
+        {
+          "wanle_img":"static/img/post/haowan04.jpg",
+          "wanle_size":"暑期<乌镇东兰一日游>",
+          "wanle_qian":"￥450"
+        },
+        {
+          "wanle_img":"static/img/post/haowan05.jpg",
+          "wanle_size":"上海参团上海一日游登东方明珠",
+          "wanle_qian":"￥350"
+        }
+      ]
+    }
+  ],
+  "wenda":[
+    {
+      "wenda_tit":"听说上海迪士尼人山人海,有避开高峰人群的经验嘛?",
+      "wenda_size":"共15个回答",
+      "wenda_tit2":"外滩最佳观夜景时间是几点到几点?",
+      "wenda_size2":"共10个回答",
+      "wenda_huida":"更多相关问答"
+    }
+  ],
+  "huadong_com":[
+    {
+      "wanle_img":"static/img/post/hua_com01.jpg",
+      "wanle_size":"上海必体验"
+    },
+    {
+      "wanle_img":"static/img/post/hua_com02.jpg",
+      "wanle_size":"来上海必吃的美食"
+    },
+    {
+      "wanle_img":"static/img/post/hua_com03.jpg",
+      "wanle_size":"上海最美的观星地"
+    },
+    {
+      "wanle_img":"static/img/post/hua_com04.jpg",
+      "wanle_size":"上海周边八大古镇推荐"
+    },
+    {
+      "wanle_img":"static/img/post/hua_com03.jpg",
+      "wanle_size":"上海必体验"
+    }
+  ],
+  "spotDetail":[
+    {
+      "imgUrl":"static/img/post/24b3af9bd12bb7e3c7b1c8d5a2.jpg_80.jpg",
+      "tit": "颐和园,北京市古代皇家园林,前身为清漪园 ",
+      "info1": "中国四大名园 ",
+      "info2": "昆明湖、万寿山为基址 ",
+      "info3": "天然山水园 "
+    },
+    {
+      "imgUrl":"static/img/post/12b59f57fb21cb02.jpg",
+      "tit": "圆明园 ,一座举世文明的皇家园林,清代一座大型皇家御苑",
+      "info1": "圆明园 ",
+      "info2": "长春园 ",
+      "info3": "万春园 "
+    },
+    {
+      "imgUrl":"static/img/post/e2b60ed2f6001602.jpg",
+      "tit": "清华大学 ",
+      "info1": "中国ZUI高学府 ",
+      "info2": "初名京师大学堂 "
+
+    },
+    {
+      "imgUrl":"static/img/post/f62355bdfe550002.jpg",
+      "tit": "天坛公园 ",
+      "info1": "世界文化遗产 ",
+      "info2": "北京的标志性符号 ",
+      "info3": "古代祭天建筑群 "
+    }
+
+  ]
+
+
+
+
+}

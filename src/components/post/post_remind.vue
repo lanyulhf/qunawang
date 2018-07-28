@@ -1,37 +1,27 @@
 <template>
-  <!--特别提醒部分-->
-  <div class="remind">
-    <div class="remind_box">
-      <p>特别提醒</p>
-    </div>
-    <div class="hua_max">
-      <div class="huadong_box">
-        <div class="huadong_one">
-          <img src="../../assets/img/post/huadong_col.jpg">
-          <p>
-            "惬意盛夏音乐之夜"作为"2018思南露天夜"的系列活动之一,7月14日至8月25日,
-            北京八达岭长城+十三陵定陵或颐和园纯颐和园纯
-            <a>查看详情</a>
-          </p>
-        </div>
+    <!--特别提醒部分-->
+    <div class="remind">
+      <div class="remind_box">
+        <p>特别提醒</p>
       </div>
-      <div class="huadong_box">
-        <div class="huadong_one">
-          <img src="../../assets/img/post/huadong_col.jpg">
-          <p>
-            "惬意盛夏音乐之夜"作为"2018思南露天夜"的系列活动之一,7月14日至8月25日,
-            北京八达岭长城+十三陵定陵或颐和园纯颐和园纯
-            <a>查看详情</a>
-          </p>
+      <div class="hua_max">
+        <div class="huadong_box" v-for="n in post_data">
+          <div class="huadong_one">
+            <img :src=n.remind_img>
+            <p>
+              {{n.remind_size}}
+              <a>{{n.remind_qing}}</a>
+            </p>
+          </div>
         </div>
       </div>
     </div>
-  </div>
 </template>
 
 <script>
     export default {
-        name: "post_remind"
+        name: "post_remind",
+      props:["post_data","n"],
     }
 </script>
 

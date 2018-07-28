@@ -1,56 +1,62 @@
 <template>
-  <!--景点行程部分-->
+    <!--景点行程部分-->
     <div class="traver">
       <div class="tianchong"></div>
       <div class="traver_top">
-        <span>西安</span>
+        <span>{{n.travel_size}}</span>
         <img src="../../assets/img/post/danjian.jpg" alt="">
-        <span>上海</span>
+        <span>{{n.travel_size02}}</span>
       </div>
       <div class="travel_max_box">
         <div class="traver_hangci01">
           <div class="zhifei">
-            <span>直飞航班</span>
-            <p>约<span class="zhifei_shi">20时30分</span></p>
+            <span>{{n.travel_ban}}</span>
+            <p>约<span class="zhifei_shi">{{n.travel_shi}}</span></p>
           </div>
           <div class="banci">
-            55
+            {{n.travel_zhi}}
             <span class="banci_ban">班</span>
           </div>
           <div class="jiaqian">
-            ￥740
+            {{n.travel_qian}}
             <span class="jiaqian_qi">起</span>
             <i class="iconfont icon-danjiantouyou youjiantou"></i>
           </div>
         </div>
         <div class="traver_hangci02">
           <div class="zhifei">
-            <span>高速动车</span>
-            <p>约<span class="zhifei_shi">5时56分</span></p>
+            <span>{{n.travel_ban_two}}</span>
+            <p>约<span class="zhifei_shi">{{n.travel_shi_two}}</span></p>
           </div>
           <div class="banci">
-            7
+            {{n.travel_zhi_two}}
             <span class="banci_ban">班</span>
           </div>
           <div class="jiaqian">
-            ￥960
+            {{n.travel_qian_two}}
             <span class="jiaqian_qi">起</span>
             <i class="iconfont icon-danjiantouyou youjiantou"></i>
           </div>
         </div>
+
+      </div>
+      <div class="traver_bottom">
+        <p>{{n.travel_bottom}}</p>
+        <i class="iconfont icon-danjiantouyou youjiantou"></i>
       </div>
     </div>
 </template>
 
 <script>
     export default {
-        name: "post_travel"
+        name: "post_travel",
+      props:["post_data","n"],
     }
 </script>
 
 <style scoped>
   .traver{
-
+    background: #ffffff;
   }
 .tianchong{
   width:100%;
@@ -64,8 +70,6 @@
     display: flex;
     align-items: center;
     padding:0 0.1rem;
-    box-sizing: border-box;
-    background: #ffffff;
   }
   .traver_top img{
     width:0.1rem;
@@ -76,9 +80,8 @@
     min-height:1.34rem;
     display: flex;
     justify-content: space-between;
-    padding:0 0.1rem;
-    background: #ffffff;
     border-bottom:1px solid #efefef;
+    padding:0 0.1rem;
   }
   .traver_hangci01{
     width:1.73rem;
@@ -112,7 +115,7 @@
     margin-left: 5px;
   }
   .banci{
-    margin:26px 0px 0px -96px;
+    margin:26px 0px 0px 21px;
     color: #585858;
   }
   .banci_ban{
@@ -131,5 +134,17 @@
   .youjiantou{
     font-size: 0.14rem;
     color: #9c9c9c;
+  }
+  .traver_bottom{
+    line-height: 0.57rem;
+    display: flex;
+    margin-bottom:0.11rem;
+    padding:0 0.1rem;
+    justify-content: space-between;
+  }
+  .traver_bottom p{
+    font-size: 0.14rem;
+    color: #727272;
+    line-height: 0.57rem;
   }
 </style>

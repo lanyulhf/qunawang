@@ -2,49 +2,13 @@
   <!--景点导航部分-->
   <div class="nav">
     <div class="nav_box">
-      <div class="nav_one">
-        <img src="../../assets/img/post/nav_01.jpg" alt="">
-        <span>攻略</span>
-      </div>
-      <div class="nav_one">
-        <img src="../../assets/img/post/nav_02.jpg" alt="">
-        <span>酒店</span>
-      </div>
-      <div class="nav_one">
-        <img src="../../assets/img/post/nav_03.jpg" alt="">
-        <span>景点</span>
-      </div>
-      <div class="nav_one">
-        <img src="../../assets/img/post/nav_04.jpg" alt="">
-        <span>玩乐</span>
-      </div>
-      <div class="nav_one">
-        <img src="../../assets/img/post/nav_05.jpg" alt="">
-        <span>美食林</span>
-      </div>
-      <div class="nav_one">
-        <img src="../../assets/img/post/nav_06.jpg" alt="">
-        <span>路线导航</span>
-      </div>
-      <div class="nav_one">
-        <img src="../../assets/img/post/nav_07.jpg" alt="">
-        <span>一日游</span>
-      </div>
-      <div class="nav_one">
-        <img src="../../assets/img/post/nav_08.jpg" alt="">
-        <span>必体验</span>
-      </div>
-      <div class="nav_one">
-        <img src="../../assets/img/post/nav_09.jpg" alt="">
-        <span>用车</span>
-      </div>
-      <div class="nav_one">
-        <img src="../../assets/img/post/nav_10.jpg" alt="">
-        <span>暑假</span>
+      <div class="nav_one" v-for="n in post_data.nav">
+        <img :src="n.nav_img">
+        <span>{{n.nav_tit}}</span>
       </div>
     </div>
     <!--特别提醒部分-->
-    <post_remind></post_remind>
+    <post_remind  :post_data="post_data.remind"></post_remind>
   </div>
 
 </template>
@@ -53,7 +17,8 @@
     import Post_remind from "./post_remind";
     export default {
         name: "post_nav",
-      components: {Post_remind}
+      components: {Post_remind},
+      props:["post_data"],
     }
 </script>
 
