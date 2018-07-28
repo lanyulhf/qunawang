@@ -8,6 +8,7 @@ import order from '../pages/order_form'
 import planeTicket from '../components/buy/planeTicket'
 import calender from '../components/buy/calender'
 import choose from '../components/buy/choose'
+import find from '../pages/find/find'
 
 Vue.use(Router)
 
@@ -59,6 +60,11 @@ export default new Router({
       path: '/choose',
       name: 'choose',
       component: choose
+    },
+    {
+      path: '/find',
+      name: 'find',
+      component: find
     }
   ]
 })

@@ -36,7 +36,7 @@
   .content-swi{
     width: 100%;
     box-sizing: border-box;
-    padding: 0 0.06rem;
+
   }
   .swi{
     font-size: 0.12rem;

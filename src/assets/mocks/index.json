@@ -120,12 +120,92 @@
 "comment":[
   {
   "imgUrl":"../../static/img/index/tourAround.png",
-  "info": "十渡聚龙湾玻璃景观 ",
-  "comment":424
-}
+    "info":[
+      {
+        "num":1,
+        "info": "十渡聚龙湾玻璃景观 ",
+        "comment": 424
+      },
+      {
+        "num":2,
+        "info": "十渡聚龙湾玻璃景观 ",
+        "comment": 333
+      },
+      {
+        "num":3,
+        "info": "十渡聚龙湾玻璃景观 ",
+        "comment": 222
+      }
+    ]
+},
+  {
+    "imgUrl":"../../static/img/index/tourAround.png",
+    "info":[
+      {
+        "num":1,
+        "info": "十渡聚龙湾玻璃景观 ",
+        "comment": 424
+      },
+      {
+        "num":2,
+        "info": "十渡聚龙湾玻璃景观 ",
+        "comment": 333
+      },
+      {
+        "num":3,
+        "info": "十渡聚龙湾玻璃景观 ",
+        "comment": 222
+      }
+    ]
+  }
 
-]
+],
+ "localInfo":[
+   {
+     "imgUrl":"../../static/img/index/tourAround.png",
+     "tit": "必游榜单 ",
+     "info": "搜罗好玩景点 "
+   },
+   {
+     "imgUrl":"../../static/img/index/tourAround.png",
+     "tit": "必游榜单 ",
+     "info": "搜罗好玩景点 "
+   },
+   {
+     "imgUrl":"../../static/img/index/tourAround.png",
+     "tit": "必游榜单 ",
+     "info": "搜罗好玩景点 "
+   }
+ ],
+  "spotDetail":[
+    {
+      "imgUrl":"../../static/img/index/tourAround.png",
+      "tit": "颐和园 ",
+      "info1": "中国四大名园 ",
+      "info2": "昆明湖、万寿山为基址 ",
+      "info3": "天然山水园 "
+    },
+    {
+      "imgUrl":"../../static/img/index/tourAround.png",
+      "tit": "圆明园 ",
+      "info1": "圆明园 ",
+      "info2": "长春园 ",
+      "info3": "万春园 "
+    },
+    {
+      "imgUrl":"../../static/img/index/tourAround.png",
+      "tit": "清华大学 ",
+      "info1": "中国ZUI高学府 ",
+      "info2": "初名京师大学堂 "
 
+    },{
+      "imgUrl":"../../static/img/index/tourAround.png",
+      "tit": "天坛公园 ",
+      "info1": "世界文化遗产 ",
+      "info2": "北京的标志性符号 ",
+      "info3": "古代祭天建筑群 "
+    }
+  ]
 
 
 }

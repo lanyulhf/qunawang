@@ -12,10 +12,12 @@
     <span>订单</span>
   </a>
   </router-link >
+  <router-link to="/find">
   <a href="">
     <span><i class="iconfont icon-Compass-simple-line-icons"></i></span>
     <span>发现</span>
   </a>
+  </router-link >
   <router-link to="/service">
   <a href="">
     <span><i class="iconfont icon-fuwu"></i></span>

@@ -52,7 +52,26 @@
 
 <script>
     export default {
-        name: "navigation"
+        name: "navigation",
+      methods:{
+        handleScroll(){                                       //打印出滚动的距离
+          var scrollTop =  document.documentElement.scrollTop || document.body.scrollTop
+          var offsetTop = document.querySelector('.headerBox').offsetTop
+          console.log(scrollTop)
+          // console.log(offsetTop)
+          if (scrollTop > offsetTop) {
+            this.searchBarFixed = true
+          } else {
+            this.searchBarFixed = false
+          }
+        }
+      },
+      mounted(){
+        window.addEventListener("scroll",this.handleScroll,true) //监听滚动条
+      },
+      destroyed(){
+        window.removeEventListener("scroll",this.handleScroll,true) //离开页面时销毁事件监听
+      }
     }
 </script>
 

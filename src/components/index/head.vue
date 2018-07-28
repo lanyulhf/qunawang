@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div class="headerBox">
       <div class="header">
         <a href=""><span>西安</span><span><i class="iconfont icon-icon1"></i></span></a>
         <a href="javascript:">
@@ -12,7 +12,15 @@
 </template>
 
 <script>
+  export default {
+    data(){
+      return {
 
+      }
+    },
+
+
+  }
 </script>
 
 <style scoped>
@@ -31,7 +39,7 @@
   }
   .header a:nth-child(1){
     display: flex;
-    background: #f0f0f0;
+    background: #fff;
     border-radius: 0.15rem;
     line-height:0.34rem;
     padding-left: 0.05rem;
@@ -43,11 +51,11 @@
     padding-right: 0.06rem;
     display: flex;
     align-items: center;
-    background: #f0f0f0;
+    background: #fff;
     border-radius: 0.15rem;
   }
   .header a:nth-child(3){
-    background: #f0f0f0;
+    background: #fff;
     border-radius: 0.25rem;
     padding-left: 0.06rem;
     padding-right: 0.06rem;

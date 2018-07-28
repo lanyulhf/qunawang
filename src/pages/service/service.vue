@@ -2,8 +2,8 @@
     <div>
         <div class="service">
             <p class="switch">
-                <span :class="isShowService ==1? 'switchbtn':''" @click="isShowService = 1">订单服务</span>
-                <span :class="isShowService ==2? 'switchbtn':''" @click="isShowService = 2">产品咨询</span>
+                <span :class="isShowService ==2? 'switchbtn':''" @click="isShowService = 2">订单服务</span>
+                <span :class="isShowService ==1? 'switchbtn':''" @click="isShowService = 1">产品咨询</span>
             </p>
             <i class="iconfont icon-dianhua"></i>
         </div>
@@ -17,7 +17,6 @@
 </template>
 
 <script>
-  // import ServiceTop from '../../components/service/serviceTop'
   import ServiceNav from '../../components/service/serviceNav'
   import ServiceSuit from '../../components/service/serviceSuit'
   import ServiceOrder from '../../components/service/serviceOrder'
@@ -25,7 +24,7 @@
             name: "service",
             data(){
               return {
-                isShowService:1
+                isShowService:2
               }
             },
             components:{
