@@ -1,5 +1,5 @@
 <template>
-    <div class="order">
+    <div>
        <div class="header">
          <div class="three"></div>
        </div>
@@ -16,9 +16,13 @@
              <div class="change">
                <a href="#" @click="change()">换一站</a>
              </div>
+             <router-link to="/lists">
              <img :src=item.img1>
+             </router-link>
              <div class="hotel">
-               <a href="#"><img :src=item.img2></a>
+               <a href="#">
+                 <img :src=item.img2>
+               </a>
                <a href="#"><img class="eight" :src=item.img3></a>
                <a href="#"><img class="twoty" :src=item.img4></a>
              </div>
@@ -52,9 +56,6 @@
 </script>
 
 <style scoped>
-  .order{
-    background: #3ec9ce;
-  }
   .header{
     width:100%;
     height:2.19rem;

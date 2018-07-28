@@ -2,8 +2,8 @@
     <div>
         <div class="service">
             <p class="switch">
-                <span :class="isShowService ==2? 'switchbtn':''" @click="isShowService = 2">订单服务</span>
-                <span :class="isShowService ==1? 'switchbtn':''" @click="isShowService = 1">产品咨询</span>
+                <span :class="isShowService ==2? 'switchbtn':''" @click="isShowService = 2">产品咨询</span>
+                <span :class="isShowService ==1? 'switchbtn':''" @click="isShowService = 1">订单服务</span>
             </p>
             <i class="iconfont icon-dianhua"></i>
         </div>

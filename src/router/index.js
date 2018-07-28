@@ -9,6 +9,7 @@ import planeTicket from '../components/buy/planeTicket'
 import calender from '../components/buy/calender'
 import choose from '../components/buy/choose'
 import find from '../pages/find/find'
+import lists from '../pages/lists'
 
 Vue.use(Router)
 
@@ -65,6 +66,11 @@ export default new Router({
       path: '/find',
       name: 'find',
       component: find
+    },
+    {
+      path: '/lists',
+      name: 'lists',
+      component: lists
     }
   ]
 })
