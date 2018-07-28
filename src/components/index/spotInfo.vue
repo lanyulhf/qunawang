@@ -47,7 +47,7 @@
 }
 .spotInfo p{
   text-indent: 0.06rem;
-  font-size:0.14rem;
+  font-size:0.12rem;
   color:#5d5d5d;
 }
 </style>

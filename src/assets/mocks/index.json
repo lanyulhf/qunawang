@@ -122,39 +122,39 @@
   "imgUrl":"../../static/img/index/tourAround.png",
     "info":[
       {
-        "num":1,
+        "num":"1.",
         "info": "十渡聚龙湾玻璃景观 ",
-        "comment": 424
+        "comment": 8200
       },
       {
-        "num":2,
-        "info": "十渡聚龙湾玻璃景观 ",
-        "comment": 333
+        "num":"2.",
+        "info": "北京古北水镇",
+        "comment": 729
       },
       {
-        "num":3,
-        "info": "十渡聚龙湾玻璃景观 ",
-        "comment": 222
+        "num":"3.",
+        "info": "张杰2018“未”",
+        "comment": "382"
       }
     ]
 },
   {
-    "imgUrl":"../../static/img/index/tourAround.png",
+    "imgUrl":"../../static/img/index/cate.png",
     "info":[
       {
-        "num":1,
-        "info": "十渡聚龙湾玻璃景观 ",
-        "comment": 424
+        "num":"1.",
+        "info": "北京烤鸭 ",
+        "comment": 4242
       },
       {
-        "num":2,
-        "info": "十渡聚龙湾玻璃景观 ",
-        "comment": 333
+        "num":"2.",
+        "info": " 北京涮牛羊肉",
+        "comment": 3195
       },
       {
-        "num":3,
-        "info": "十渡聚龙湾玻璃景观 ",
-        "comment": 222
+        "num":"3.",
+        "info": "卤煮火烧 ",
+        "comment": 4516
       }
     ]
   }
@@ -162,49 +162,56 @@
 ],
  "localInfo":[
    {
-     "imgUrl":"../../static/img/index/tourAround.png",
+     "imgUrl":"../../static/img/index/travelMust.png",
      "tit": "必游榜单 ",
      "info": "搜罗好玩景点 "
    },
    {
-     "imgUrl":"../../static/img/index/tourAround.png",
-     "tit": "必游榜单 ",
-     "info": "搜罗好玩景点 "
+     "imgUrl":"../../static/img/index/binMa.png",
+     "tit": "攻略 ",
+     "info": "皇城根儿 老 "
    },
    {
-     "imgUrl":"../../static/img/index/tourAround.png",
-     "tit": "必游榜单 ",
-     "info": "搜罗好玩景点 "
+     "imgUrl":"../../static/img/index/action.png",
+     "tit": "演出活动 ",
+     "info": "当地和周边 "
    }
  ],
   "spotDetail":[
     {
-      "imgUrl":"../../static/img/index/tourAround.png",
-      "tit": "颐和园 ",
-      "info1": "中国四大名园 ",
-      "info2": "昆明湖、万寿山为基址 ",
-      "info3": "天然山水园 "
-    },
-    {
-      "imgUrl":"../../static/img/index/tourAround.png",
-      "tit": "圆明园 ",
-      "info1": "圆明园 ",
-      "info2": "长春园 ",
-      "info3": "万春园 "
-    },
-    {
-      "imgUrl":"../../static/img/index/tourAround.png",
-      "tit": "清华大学 ",
-      "info1": "中国ZUI高学府 ",
-      "info2": "初名京师大学堂 "
+      "id":1,
+      "info":[
+        {
+          "imgUrl":"../../static/img/index/24b3af9bd12bb7e3c7b1c8d5a2.jpg_80.jpg",
+          "tit": "颐和园,北京市古代皇家园林,前身为清漪园 ",
+          "info1": "中国四大名园 ",
+          "info2": "昆明湖、万寿山为基址 ",
+          "info3": "天然山水园 "
+        },
+        {
+          "imgUrl":"../../static/img/index/12b59f57fb21cb02.jpg",
+          "tit": "圆明园 ,一座举世文明的皇家园林,清代一座大型皇家御苑",
+          "info1": "圆明园 ",
+          "info2": "长春园 ",
+          "info3": "万春园 "
+        },
+        {
+          "imgUrl":"../../static/img/index/e2b60ed2f6001602.jpg",
+          "tit": "清华大学 ",
+          "info1": "中国ZUI高学府 ",
+          "info2": "初名京师大学堂 "
 
-    },{
-      "imgUrl":"../../static/img/index/tourAround.png",
-      "tit": "天坛公园 ",
-      "info1": "世界文化遗产 ",
-      "info2": "北京的标志性符号 ",
-      "info3": "古代祭天建筑群 "
+        },
+        {
+          "imgUrl":"../../static/img/index/f62355bdfe550002.jpg",
+          "tit": "天坛公园 ",
+          "info1": "世界文化遗产 ",
+          "info2": "北京的标志性符号 ",
+          "info3": "古代祭天建筑群 "
+        }
+      ]
     }
+
   ]
 
 

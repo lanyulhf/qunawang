@@ -1,8 +1,9 @@
 <template>
 <div class="indexBox">
   <!--头部-->
-  <Head class="headBox" id="head"></Head>
+  <Head class="headBox" id="head" :isActive="sco"></Head>
   <!--轮播图-->
+  <div class="post">
   <my-swiper></my-swiper>
   <!--导航-->
   <Navigation></Navigation>
@@ -29,6 +30,7 @@
   </div>
   <!--猜你喜欢部分-->
   <love :spotDetail="spotDetail"></love>
+  </div>
 </div>
 </template>
 <script>
@@ -45,6 +47,7 @@
     components: {Love, LocalPlay, LowPrice, HotDes, Title, Navigation, mySwiper, Head},
     data(){
       return {
+        sco:false,
         title:[],
         spot:[],
         comment:[],
@@ -65,12 +68,27 @@
             })
           }
         })
+      },
+      handle(){
+        var scrollTop = document.querySelector(".post").scrollTop;
+        if(scrollTop<45){
+          this.sco = false
+        }else if(scrollTop>=45){
+          this.sco = true
+        }
       }
 
     },
     created(){
       this.dataInit();
+    },
+    mounted(){
+      window.addEventListener("scroll",this.handle,true)
+    },
+    destroyed(){
+      window.removeEventListener("scroll",this.handle,true)
     }
+
 
   }
 </script>
@@ -78,6 +96,8 @@
 <style scoped>
   .indexBox{
     position:relative;
+   display: flex;
+    flex-direction: column;
   }
   .headBox{
     position:absolute;
@@ -134,7 +154,8 @@
     display: inline-block;
     line-height: 0.20rem;
     border-radius:0.8rem;
-    border:2px solid #a7dafb;
+    border:1px solid #a7dafb;
+    margin-left:0.06rem;
   }
   .infoImg{
     display: flex;
@@ -153,4 +174,9 @@
     width:0.82rem;
     height:1.02rem;
   }
+.post{
+  flex:1;
+  overflow-y:scroll;
+
+}
 </style>

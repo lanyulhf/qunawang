@@ -6,7 +6,9 @@
       <p class="info">抖音网红西安的正确打开方式酱婶儿</p>
       <p class="subTit"><span>周边精选</span></p>
     </div>
-   <spot-details :spotDetail="spotDetail"></spot-details>
+   <spot-details :spotDetail="spotDetail" :n="n" v-for="n in spotDetail" :key="n.cardTypeName"></spot-details>
+    <p class="moreBut"><a href="" class="more">查看更多<i class="iconfont icon-icon1"></i></a></p>
+
   </div>
 </template>
 
@@ -40,6 +42,23 @@
   font-size:0.12rem;
   color:#d3d3d3;
   border-bottom: 1px solid #fafafa;
+  margin-bottom:0.12rem;
+}
+.moreBut{
+  display: flex;
+  justify-content: center;
 }
 
+.more{
+  border-radius:0.14rem;
+  width:1.0rem;
+  line-height:0.32rem;
+  border:2px solid #e3e3e3;
+  text-align: center;
+  color:#a5a5a5;
+  font-size:0.1rem;
+}
+.more .iconfont{
+  margin-left:0.05rem;
+}
 </style>

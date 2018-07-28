@@ -1,6 +1,7 @@
 <template>
   <div id="app">
     <router-view class="content"></router-view>
+
     <Foot></Foot>
   </div>
 </template>
@@ -29,4 +30,5 @@ export default {
     overflow-y: scroll;
     overflow-x:hidden ;
   }
+
 </style>

@@ -43,6 +43,7 @@
     line-height:0.5rem;
   }
 .localPlay .center{
+  color:#171717;
  float:left;
   /*display: flex;*/
 }
@@ -74,7 +75,7 @@ center{
   font-size:0.14rem;
   line-height:0.18rem;
   text-align: center;
-  background: #eb4b4a;
+  background: #ec5730;
   color:#fff;
   display: inline-block;
   border-top-right-radius: 3px;

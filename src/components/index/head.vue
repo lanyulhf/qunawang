@@ -1,5 +1,5 @@
 <template>
-    <div class="headerBox">
+    <div class="headerBox" :class="{active:isActive}">
       <div class="header">
         <a href=""><span>西安</span><span><i class="iconfont icon-icon1"></i></span></a>
         <a href="javascript:">
@@ -13,6 +13,7 @@
 
 <script>
   export default {
+    props:["isActive"],
     data(){
       return {
 
@@ -29,19 +30,19 @@
     display: flex;
     align-items: center;
     justify-content: space-around;
-    padding:0.1rem;
+    padding:0.08rem;
     box-sizing: border-box;
   }
   .header a{
     color:#626262;
     font-size:0.16rem;
-    line-height:0.34rem;
+    line-height:0.32rem;
   }
   .header a:nth-child(1){
     display: flex;
-    background: #fff;
+    background:rgba(255,255,255,.6);
     border-radius: 0.15rem;
-    line-height:0.34rem;
+    line-height:0.32rem;
     padding-left: 0.05rem;
     text-align: center;
   }
@@ -51,11 +52,11 @@
     padding-right: 0.06rem;
     display: flex;
     align-items: center;
-    background: #fff;
+    background: rgb(240,240,240);
     border-radius: 0.15rem;
   }
   .header a:nth-child(3){
-    background: #fff;
+    background:rgba(255,255,255,.6);
     border-radius: 0.25rem;
     padding-left: 0.06rem;
     padding-right: 0.06rem;
@@ -71,7 +72,7 @@
     margin-left:0.04rem;
     padding: 0 0.06rem ;
     outline: none;
-    line-height:0.34rem;
+    line-height:0.32rem;
     background: url(../../assets/img/index/headerPic1.png) no-repeat right center;
   }
   input::-webkit-input-placeholder{
@@ -85,5 +86,12 @@
   input:-ms-input-placeholder{
   color: #626262;
     font-size:0.16rem;
+  }
+  /*吸顶样式*/
+  .active{
+    position: fixed;
+    top:0;
+    /*transtion:all 0.5;*/
+    background: rgba(255,255,255);
   }
 </style>
