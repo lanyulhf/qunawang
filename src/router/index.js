@@ -5,9 +5,12 @@ import service from '../pages/service/service'
 import mine from '../pages/mine/mine'
 import post from '../pages/post'
 import order from '../pages/order_form'
-import planeTicket from '../components/buy/planeTicket'
+
 import calender from '../components/buy/calender'
 import choose from '../components/buy/choose'
+import planeTicket from '../pages/planeTicket'
+import planeTime from '../pages/planeTime'
+import planePiao from '../pages/planePiao'
 import find from '../pages/find/find'
 import lists from '../pages/lists'
 
@@ -71,6 +74,16 @@ export default new Router({
       path: '/lists',
       name: 'lists',
       component: lists
-    }
+    },
+    {
+      path: '/planePiao',
+      name: 'planePiao',
+      component: planePiao
+    },
+    {
+      path: '/planeTime',
+      name: 'planeTime',
+      component: planeTime
+    },
   ]
 })

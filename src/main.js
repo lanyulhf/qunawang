@@ -6,6 +6,8 @@ import router from './router'
 import "swiper/dist/css/swiper.css"
 import MintUI from 'mint-ui'
 import "mint-ui/lib/style.css"
+import store from './vuex/store'
+
 Vue.use(MintUI)
 
 Vue.config.productionTip = false
@@ -14,6 +16,7 @@ Vue.config.productionTip = false
 new Vue({
   el: '#app',
   router,
+  store,
   components: { App },
   template: '<App/>'
 })

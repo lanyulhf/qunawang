@@ -151,7 +151,7 @@
           console.log(this.sendday)
           if(this.$route.query.id == 1){
             this.$router.push({
-              path:'/planeTicket',
+              path:'/',
               query:{
                 monthL:this.sendday.month,
                 dateL:this.sendday.date
@@ -159,7 +159,15 @@
             })
           }else if (this.$route.query.id == 2){
             this.$router.push({
-              path:'/planeTicket',
+              path:'/',
+              query:{
+                monthR:this.sendday.month,
+                dateR:this.sendday.date
+              }
+            })
+          }else if (this.$route.query.id == 3){
+            this.$router.push({
+              path:'/planeTime',
               query:{
                 monthR:this.sendday.month,
                 dateR:this.sendday.date
@@ -170,7 +178,7 @@
         },
         back(){                                     //点击back返回对应值,
           this.$router.push({
-            path:'/planeTicket',
+            path:'/',
             query:{
               month:this.sendday.month,           //如果直接点返回就返回当天的值
               date:this.sendday.date

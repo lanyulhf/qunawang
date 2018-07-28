@@ -1,123 +1,12 @@
 {
-  "goods": [
-    {
-      "pic": "../../static/img/index-goodlist-i1.jpg",
-      "title": "CLINIQUE/倩碧 明肌晶透",
-      "local": "倩碧·西湖银太城",
-      "save": "15.5",
-      "price": "155",
-      "shop": "107",
-      "letter": "包邮"
-    },
-    {
-      "pic": "../../static/img/index-goodlist-i2.jpg",
-      "title": "魅可/MAC柔感哑光唇膏",
-      "local": "魅可·西湖银太城",
-      "save": "17",
-      "price": "170",
-      "shop": "4742",
-      "letter": "包邮"
-    },
-    {
-      "pic": "../../static/img/index-goodlist-i3.jpg",
-      "title": "兰芝水漾清颜爽",
-      "local": "兰芝·西湖银太城",
-      "save": "18.5",
-      "price": "185",
-      "shop": "10",
-      "letter": "包邮"
-    },
-    {
-      "pic": "../../static/img/index-goodlist-i4.jpg",
-      "title": "CLINIQUE/倩碧 明肌晶透",
-      "local": "倩碧·西湖银太城",
-      "save": "15.5",
-      "price": "175",
-      "shop": "107",
-      "letter": "包邮"
-    },
-    {
-      "pic": "../../static/img/index-goodlist-i5.jpg",
-      "title": "银泰百货同款SK-ll",
-      "local": "SK-ll·西湖银太城",
-      "save": "49",
-      "price": "490",
-      "shop": "35",
-      "letter": "包邮"
-    },
-    {
-      "pic": "../../static/img/index-goodlist-i6.jpg",
-      "title": "CLINIQUE/倩碧 明肌晶透",
-      "local": "倩碧·西湖银太城",
-      "save": "15.5",
-      "price": "195",
-      "shop": "107",
-      "letter": "包邮"
-    },
-    {
-      "pic": "../../static/img/index-goodlist-i7.jpg",
-      "title": "CLINIQUE/倩碧 明肌晶透",
-      "local": "倩碧·西湖银太城",
-      "save": "15.5",
-      "price": "115",
-      "shop": "107",
-      "letter": "包邮"
-    },
-    {
-      "pic": "../../static/img/index-goodlist-i8.jpg",
-      "title": "CLINIQUE/倩碧 明肌晶透",
-      "local": "倩碧·西湖银太城",
-      "save": "15.5",
-      "price": "125",
-      "shop": "107",
-      "letter": "包邮"
-    },
-    {
-      "pic": "../../static/img/index-goodlist-i9.jpg",
-      "title": "CLINIQUE/倩碧 明肌晶透",
-      "local": "倩碧·西湖银太城",
-      "save": "15.5",
-      "price": "135",
-      "shop": "107",
-      "letter": "包邮"
-    },
-    {
-      "pic": "../../static/img/index-goodlist-i10.jpg",
-      "title": "CLINIQUE/倩碧 明肌晶透",
-      "local": "倩碧·西湖银太城",
-      "save": "15.5",
-      "price": "255",
-      "shop": "107",
-      "letter": "包邮"
-    },
-    {
-      "pic": "../../static/img/index-goodlist-i11.jpg",
-      "title": "CLINIQUE/倩碧 明肌晶透",
-      "local": "倩碧·西湖银太城",
-      "save": "15.5",
-      "price": "355",
-      "shop": "107",
-      "letter": "包邮"
-    },
-    {
-      "pic": "../../static/img/index-goodlist-i4.jpg",
-      "title": "御颜柔肤水",
-      "local": "苏秘37°·西湖银太城",
-      "save": "15.5",
-      "price": "670",
-      "shop": "9",
-      "letter": "包邮"
-    }
-  ],
-  "product":[
-    {"btitle":"","stitle":"","pic":"../../static/img/index-pro-i1.jpg"},
-    {"btitle":"服装服饰","stitle":"夏日爽购","pic":"../../static/img/index-pro-i2.jpg"},
-    {"btitle":"大牌美妆","stitle":"HR甄选礼盒","pic":"../../static/img/index-pro-i3.jpg"},
-    {"btitle":"运动潮流","stitle":"玩转运动时髦风","pic":"../../static/img/index-pro-i4.jpg"},
-    {"btitle":"珠宝配饰","stitle":"全场199","pic":"../../static/img/index-pro-i5.jpg"},
-    {"btitle":"生活家居","stitle":"精品家纺9折起","pic":"../../static/img/index-pro-i6.jpg"},
-    {"btitle":"内衣馆","stitle":"100元三条","pic":"../../static/img/index-pro-i7.jpg"},
-    {"btitle":"今日值得逛","stitle":"别错过的品牌行动","pic":"../../static/img/index-pro-i8.jpg"}
+
+  "love":[
+    {"lovedate":"08-04","loveweek":"周六","lovemoney":"1548"},
+    {"lovedate":"08-01","loveweek":"周三","lovemoney":"1613"},
+    {"lovedate":"08-03","loveweek":"周五","lovemoney":"1627"},
+    {"lovedate":"08-02","loveweek":"周四","lovemoney":"1630"},
+    {"lovedate":"08-05","loveweek":"周日","lovemoney":"1675"},
+    {"lovedate":"07-31","loveweek":"周二","lovemoney":"1509"}
   ],
   "nav":[
     {"class":"iconfont icon-yiriyou","title":"低价机票"},
@@ -127,7 +16,491 @@
     {"class":"iconfont icon-boshimao","title":"学生认证"},
     {"class":"iconfont icon-ditu","title":"省钱地图"}
 
-  ]
+
+
+  ],
+  "planeTime":{
+    "planeDate":[
+      {
+        "stime":"06:50",
+        "etime":"09:50",
+        "slocal":"首都T2",
+        "elocal":"江北T3",
+        "psize":"南航CZ3183 空客330(宽)",
+        "price":"1000",
+        "zhekou":"经济舱6.1折"
+      },
+      {
+        "stime":"06:50",
+        "etime":"09:50",
+        "slocal":"首都T3",
+        "elocal":"江北2A",
+        "psize":"华夏航G58032 空客330(宽)",
+        "price":"1077",
+        "zhekou":"经济舱6.1折"
+      },
+      {
+        "stime":"07:00",
+        "etime":"09:55",
+        "slocal":"首都T2",
+        "elocal":"江北T3",
+        "psize":"国航CA3183 空客330(宽)",
+        "price":"1020",
+        "zhekou":"经济舱5.7折"
+      },
+      {
+        "stime":"08:00",
+        "etime":"11:05",
+        "slocal":"首都T2",
+        "elocal":"江北T3",
+        "psize":"南航CZ3183 波音747(大)",
+        "price":"1070",
+        "zhekou":"经济舱6.1折"
+      },
+      {
+        "stime":"08:05",
+        "etime":"10:55",
+        "slocal":"首都T2",
+        "elocal":"江北T3",
+        "psize":"南航CZ3183 空客330(宽)",
+        "price":"1050",
+        "zhekou":"经济舱6.4折"
+      },
+      {
+        "stime":"08:55",
+        "etime":"12:00",
+        "slocal":"首都T2",
+        "elocal":"江北T3",
+        "psize":"国航CZ3183 波音738(大)",
+        "price":"1070",
+        "zhekou":"经济舱5.9折"
+      },
+      {
+        "stime":"09:05",
+        "etime":"12:05",
+        "slocal":"首都T2",
+        "elocal":"江北T3",
+        "psize":"南航CZ3183 空客330(宽)",
+        "price":"1210",
+        "zhekou":"经济舱6.9折"
+      },
+      {
+        "stime":"11:35",
+        "etime":"14:40",
+        "slocal":"首都T2",
+        "elocal":"江北T3",
+        "psize":"南航CZ3183 空客330(宽)",
+        "price":"1246",
+        "zhekou":"经济舱6.9折"
+      },
+      {
+        "stime":"12:00",
+        "etime":"14:45",
+        "slocal":"首都T2",
+        "elocal":"江北T3",
+        "psize":"南航CZ3183 空客330(宽)",
+        "price":"1240",
+        "zhekou":"经济舱6.1折"
+      },
+      {
+        "stime":"14:00",
+        "etime":"17:50",
+        "slocal":"首都T2",
+        "elocal":"江北T3",
+        "psize":"南航CZ3183 空客330(宽)",
+        "price":"1230",
+        "zhekou":"经济舱6.1折"
+      },
+      {
+        "stime":"14:50",
+        "etime":"15:50",
+        "slocal":"首都T2",
+        "elocal":"江北T3",
+        "psize":"南航CZ3183 空客330(宽)",
+        "price":"1235",
+        "zhekou":"经济舱6.1折"
+      },
+      {
+        "stime":"15:50",
+        "etime":"16:50",
+        "slocal":"首都T2",
+        "elocal":"江北T3",
+        "psize":"南航CZ3183 空客330(宽)",
+        "price":"1122",
+        "zhekou":"经济舱6.1折"
+      },
+      {
+        "stime":"17:50",
+        "etime":"18:50",
+        "slocal":"首都T2",
+        "elocal":"江北T3",
+        "psize":"南航CZ3183 空客330(宽)",
+        "price":"3341",
+        "zhekou":"贵宾舱6.2折"
+      },
+      {
+        "stime":"19:50",
+        "etime":"20:50",
+        "slocal":"首都T2",
+        "elocal":"江北T3",
+        "psize":"南航CZ3183 空客330(宽)",
+        "price":"1231",
+        "zhekou":"经济舱6.1折"
+      },
+      {
+        "stime":"21:50",
+        "etime":"22:20",
+        "slocal":"首都T2",
+        "elocal":"江北T3",
+        "psize":"南航CZ3183 空客330(宽)",
+        "price":"1100",
+        "zhekou":"经济舱6.1折"
+      },
+      {
+        "stime":"22:50",
+        "etime":"23:50",
+        "slocal":"首都T2",
+        "elocal":"江北T3",
+        "psize":"南航CZ3183 空客330(宽)",
+        "price":"1300",
+        "zhekou":"经济舱6.1折"
+      },
+      {
+        "stime":"23:50",
+        "etime":"00:50",
+        "slocal":"首都T2",
+        "elocal":"江北T3",
+        "psize":"南航CZ3183 空客330(宽)",
+        "price":"1200",
+        "zhekou":"经济舱6.1折"
+      }
+    ],
+    "planeInt":[
+      {
+        "id":"0",
+        "stime":"05:50",
+        "etime":"08:50",
+        "slocal":"首都机场T3",
+        "elocal":"江北机场T5",
+        "psize":"南航CZ3183 空客330(宽) 提供餐食",
+        "speak":"以下价格不包括机建燃油费",
+        "piao":[
+          {
+            "title":"马航优选",
+            "stitle":"经济舱 退改200元起 >",
+            "price":"1540",
+            "backs":"退订"
+          },
+          {
+            "title":"自营特惠",
+            "stitle":"经济舱 退改200元起 >",
+            "price":"1050",
+            "backs":"退订"
+          },
+          {
+            "title":"优享飞",
+            "stitle":"经济舱 退改200元起 >",
+            "price":"1170",
+            "backs":"退订"
+          },
+          {
+            "title":"经济舱优选",
+            "stitle":"经济舱 赠150元大礼包 >",
+            "price":"1640",
+            "backs":"退订"
+          },
+          {
+            "title":"南航优选全价经济",
+            "stitle":"全价经济舱 提前改期免费 >",
+            "price":"1560",
+            "backs":"退订"
+          },
+          {
+            "title":"南航优选商务舱",
+            "stitle":"商务舱 退改160元起 >",
+            "price":"1690",
+            "backs":"退订"
+          }
+
+
+        ]
+      },
+      {
+        "id":"1",
+        "stime":"06:50",
+        "etime":"09:50",
+        "slocal":"首都机场T2",
+        "elocal":"江北机场T3",
+        "psize":"南航CZ3183 空客330(宽) 提供餐食",
+        "speak":"以下价格不包括机建燃油费",
+        "piao":[
+          {
+            "title":"南航优选",
+            "stitle":"经济舱 退改200元起 >",
+            "price":"1000",
+            "backs":"退订"
+          },
+          {
+            "title":"自营特惠",
+            "stitle":"经济舱 退改200元起 >",
+            "price":"1050",
+            "backs":"退订"
+          },
+          {
+            "title":"优享飞",
+            "stitle":"经济舱 退改200元起 >",
+            "price":"1170",
+            "backs":"退订"
+          },
+          {
+            "title":"经济舱优选",
+            "stitle":"经济舱 赠150元大礼包 >",
+            "price":"1640",
+            "backs":"退订"
+          },
+          {
+            "title":"南航优选全价经济",
+            "stitle":"全价经济舱 提前改期免费 >",
+            "price":"1560",
+            "backs":"退订"
+          },
+          {
+            "title":"南航优选商务舱",
+            "stitle":"商务舱 退改160元起 >",
+            "price":"1690",
+            "backs":"退订"
+          }
+
+
+        ]
+      },
+      {
+        "id":"2",
+        "stime":"06:50",
+        "etime":"09:50",
+        "slocal":"首都机场T2",
+        "elocal":"江北机场T3",
+        "psize":"南航CZ3183 空客330(宽) 提供餐食",
+        "speak":"以下价格不包括机建燃油费",
+        "piao":[
+          {
+            "title":"经济舱优选",
+            "stitle":"经济舱 赠150元大礼包 >",
+            "price":"1640",
+            "backs":"退订"
+          },
+          {
+            "title":"南航优选全价经济",
+            "stitle":"全价经济舱 提前改期免费 >",
+            "price":"1560",
+            "backs":"退订"
+          },
+          {
+            "title":"南航优选商务舱",
+            "stitle":"商务舱 退改160元起 >",
+            "price":"1690",
+            "backs":"退订"
+          }
+
+
+        ]
+      },
+      {
+        "id":"3",
+        "stime":"7:50",
+        "etime":"09:55",
+        "slocal":"首都机场T2",
+        "elocal":"江北机场T3",
+        "psize":"南航CZ3183 空客330(宽) 提供餐食",
+        "speak":"以下价格不包括机建燃油费",
+        "piao":[
+          {
+            "title":"南航优选",
+            "stitle":"经济舱 退改200元起 >",
+            "price":"1000",
+            "backs":"退订"
+          },
+          {
+            "title":"自营特惠",
+            "stitle":"经济舱 退改200元起 >",
+            "price":"1050",
+            "backs":"退订"
+          },
+          {
+            "title":"优享飞",
+            "stitle":"经济舱 退改200元起 >",
+            "price":"1170",
+            "backs":"退订"
+          },
+          {
+            "title":"经济舱优选",
+            "stitle":"经济舱 赠150元大礼包 >",
+            "price":"1640",
+            "backs":"退订"
+          },
+          {
+            "title":"南航优选全价经济",
+            "stitle":"全价经济舱 提前改期免费 >",
+            "price":"1560",
+            "backs":"退订"
+          },
+          {
+            "title":"南航优选商务舱",
+            "stitle":"商务舱 退改160元起 >",
+            "price":"1690",
+            "backs":"退订"
+          }
+
+
+        ]
+      },
+      {
+        "id":"4",
+        "stime":"08:00",
+        "etime":"11:05",
+        "slocal":"首都机场T2",
+        "elocal":"江北机场T3",
+        "psize":"南航CZ3183 空客330(宽) 提供餐食",
+        "speak":"以下价格不包括机建燃油费",
+        "piao":[
+          {
+            "title":"南航优选",
+            "stitle":"经济舱 退改200元起 >",
+            "price":"1000",
+            "backs":"退订"
+          },
+          {
+            "title":"自营特惠",
+            "stitle":"经济舱 退改200元起 >",
+            "price":"1050",
+            "backs":"退订"
+          },
+          {
+            "title":"优享飞",
+            "stitle":"经济舱 退改200元起 >",
+            "price":"1170",
+            "backs":"退订"
+          },
+          {
+            "title":"经济舱优选",
+            "stitle":"经济舱 赠150元大礼包 >",
+            "price":"1640",
+            "backs":"退订"
+          },
+          {
+            "title":"南航优选全价经济",
+            "stitle":"全价经济舱 提前改期免费 >",
+            "price":"1560",
+            "backs":"退订"
+          },
+          {
+            "title":"南航优选商务舱",
+            "stitle":"商务舱 退改160元起 >",
+            "price":"1690",
+            "backs":"退订"
+          }
+
+
+        ]
+      },
+      {
+        "id":"5",
+        "stime":"08:05",
+        "etime":"10:55",
+        "slocal":"首都机场T2",
+        "elocal":"江北机场T3",
+        "psize":"南航CZ3183 空客330(宽) 提供餐食",
+        "speak":"以下价格不包括机建燃油费",
+        "piao":[
+          {
+            "title":"南航优选",
+            "stitle":"经济舱 退改200元起 >",
+            "price":"1000",
+            "backs":"退订"
+          },
+          {
+            "title":"自营特惠",
+            "stitle":"经济舱 退改200元起 >",
+            "price":"1050",
+            "backs":"退订"
+          },
+          {
+            "title":"优享飞",
+            "stitle":"经济舱 退改200元起 >",
+            "price":"1170",
+            "backs":"退订"
+          },
+          {
+            "title":"经济舱优选",
+            "stitle":"经济舱 赠150元大礼包 >",
+            "price":"1640",
+            "backs":"退订"
+          },
+          {
+            "title":"南航优选全价经济",
+            "stitle":"全价经济舱 提前改期免费 >",
+            "price":"1560",
+            "backs":"退订"
+          },
+          {
+            "title":"南航优选商务舱",
+            "stitle":"商务舱 退改160元起 >",
+            "price":"1690",
+            "backs":"退订"
+          },
+          {
+            "title":"南航优选",
+            "stitle":"经济舱 退改200元起 >",
+            "price":"1000",
+            "backs":"退订"
+          }
+
+
+
+
+
+        ]
+      },
+      {
+        "id":"6",
+        "stime":"08:55",
+        "etime":"12:00",
+        "slocal":"首都机场T2",
+        "elocal":"江北机场T3",
+        "psize":"南航CZ3183 空客330(宽) 提供餐食",
+        "speak":"以下价格不包括机建燃油费",
+        "piao":[
+          {
+            "title":"自营特惠",
+            "stitle":"经济舱 退改200元起 >",
+            "price":"1050",
+            "backs":"退订"
+          },
+          {
+            "title":"优享飞",
+            "stitle":"经济舱 退改200元起 >",
+            "price":"1170",
+            "backs":"退订"
+          },
+          {
+            "title":"经济舱优选",
+            "stitle":"经济舱 赠150元大礼包 >",
+            "price":"1640",
+            "backs":"退订"
+          },
+          {
+            "title":"南航优选全价经济",
+            "stitle":"全价经济舱 提前改期免费 >",
+            "price":"1560",
+            "backs":"退订"
+          }
+
+
+        ]
+      }
+    ]
+
+  }
 
 }
 

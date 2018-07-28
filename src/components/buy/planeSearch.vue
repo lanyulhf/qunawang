@@ -8,14 +8,14 @@
         <li @click="li3(3)" :class="{active:isActive == 3}">往返</li>
       </ul>
       <div class="home-search-city">
-        <a href="#" @click="goCity(1)">{{leftCity}}</a>
+        <a href="#" @click="goCity(1)">{{ this.$store.state.leftCity}}</a>
         <span><img src="../../assets/img/plane.png" @click="changeCity"></span>
-        <a href="#" @click="goCity(2)">{{rightCity}}</a>
+        <a href="#" @click="goCity(2)">{{this.$store.state.rightCity}}</a>
       </div>
       <div class="home-search-time">
-        <a href="#" @click="goCalendar(1)">{{startMonthL}}月{{startDateL}}日</a>
-        <span v-if="searchRight">{{startDateR-startDateL}}</span>
-        <a href="#" v-if="searchRight" @click="goCalendar(2)">{{startMonthR}}月{{startDateR}}日</a>
+        <a href="#" @click="goCalendar(1)">{{this.$store.state.startMonthL}}月{{this.$store.state.startDateL}}日</a>
+        <span v-if="searchRight">{{(this.$store.state.startMonthR-this.$store.state.startMonthL)*31+(this.$store.state.startDateR-this.$store.state.startDateL)}}</span>
+        <a href="#" v-if="searchRight" @click="goCalendar(2)">{{this.$store.state.startMonthR}}月{{this.$store.state.startDateR}}日</a>
       </div>
       <div class="home-search-seat">
         <div class="seat" ><a href="#">选择舱位</a><span v-if="childChecked || babyChecked" @click="showMo(true)">预定说明</span></div>
@@ -28,7 +28,7 @@
         </div>
       </div>
       <div class="submit">
-        <router-link to="{path:'/'}"><a href="#">搜索</a></router-link>
+        <router-link :to="{path:'/planeTime'}"><a href="#">搜索</a></router-link>
       </div>
     </div>
   </div>
@@ -40,8 +40,6 @@
         name: "planeSearch",
       data(){
           return{
-            leftCity:"北京",
-            rightCity:"上海",
             startMonthL:3,
             startDateL:5,
             startMonthR:3,
@@ -51,7 +49,7 @@
             searchLeft:true,
             searchRight:false,
             searchCen:false,
-            isActive:-1   //点击时的样式
+            isActive:1   //点击时的样式
           }
       },
       methods:{
@@ -64,10 +62,11 @@
             })
           },
         changeCity(){               //左右切换位置
+
             let cen = null;
-            cen = this.leftCity
-            this.leftCity = this.rightCity;
-            this.rightCity = cen;
+            cen = this.$store.state.leftCity;
+            this.$store.state.leftCity = this.$store.state.rightCity;
+            this.$store.state.rightCity= cen;
         },
         showMo(i){
             this.$emit("fshowMo",i)
@@ -101,18 +100,29 @@
         }
       },
       created(){
-          this.leftCity = this.$route.query.cityL?this.$route.query.cityL:"北京";
-          this.rightCity = this.$route.query.cityR?this.$route.query.cityR:"上海";
-          this.startMonthL = this.$route.query.monthL?this.$route.query.monthL:"3";
-          this.startDateL = this.$route.query.dateL?this.$route.query.dateL:"5";
-          this.startMonthR = this.$route.query.monthR?this.$route.query.monthR:"3";
-          this.startDateR = this.$route.query.dateR?this.$route.query.dateR:"6";
-          if(this.startMonthR || this.startDateR){
+          this.$store.state.leftCity = this.$route.query.cityL?this.$route.query.cityL:"北京";
+          this.$store.state.rightCity = this.$route.query.cityR?this.$route.query.cityR:"上海";
+          this.$store.state.startMonthL = this.$route.query.monthL?this.$route.query.monthL:"3";
+          this.$store.state.startDateL = this.$route.query.dateL?this.$route.query.dateL:"5";
+          this.$store.state.startMonthR = this.$route.query.monthR?this.$route.query.monthR:"3";
+          this.$store.state.startDateR = this.$route.query.dateR?this.$route.query.dateR:"6";
+          if(this.$store.state.startMonthR || this.$store.state.startDateR){
             this.li3(3);
-          }else if (this.startMonthL || this.startDateL){
+          }else if (this.$store.state.startMonthL || this.$store.state.startDateL){
             this.li1(1);
           }
+        // console.log(this.$store.state.startDateR)
+        // console.log(new Date().getDate())
+      /*  query:{
+            cityL:"北京",
+              cityR:"上海",
+            monthL:new Date().getMonth(),
+            dateL:new Date().getDate(),
+            monthR:new Date().getMonth()+1,
+            dateR:new Date().getDate()+1,
+        }*/
       }
+
     }
 </script>
 
@@ -137,6 +147,7 @@
     background: rgba(255, 255, 255, 0.96);
     box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.06);
     margin-top: -0.95rem;
+    padding-bottom: 0.2rem;
 
   }
   .home-search-top{
