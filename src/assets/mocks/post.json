@@ -208,39 +208,107 @@
       "wanle_size":"上海必体验"
     }
   ],
-  "spotDetail":[
-    {
-      "imgUrl":"static/img/post/24b3af9bd12bb7e3c7b1c8d5a2.jpg_80.jpg",
-      "tit": "颐和园,北京市古代皇家园林,前身为清漪园 ",
-      "info1": "中国四大名园 ",
-      "info2": "昆明湖、万寿山为基址 ",
-      "info3": "天然山水园 "
-    },
-    {
-      "imgUrl":"static/img/post/12b59f57fb21cb02.jpg",
-      "tit": "圆明园 ,一座举世文明的皇家园林,清代一座大型皇家御苑",
-      "info1": "圆明园 ",
-      "info2": "长春园 ",
-      "info3": "万春园 "
-    },
-    {
-      "imgUrl":"static/img/post/e2b60ed2f6001602.jpg",
-      "tit": "清华大学 ",
-      "info1": "中国ZUI高学府 ",
-      "info2": "初名京师大学堂 "
-
-    },
-    {
-      "imgUrl":"static/img/post/f62355bdfe550002.jpg",
-      "tit": "天坛公园 ",
-      "info1": "世界文化遗产 ",
-      "info2": "北京的标志性符号 ",
-      "info3": "古代祭天建筑群 "
-    }
-
-  ]
 
 
+    "spotDetail_one":[
+      {
+        "spotDetail":[
+          {
+            "imgUrl":"static/img/post/24b3af9bd12bb7e3c7b1c8d5a2.jpg_80.jpg",
+            "tit": "颐和园,北京市古代皇家园林,前身为清漪园 ",
+            "info1": "中国四大名园 ",
+            "info2": "昆明湖、万寿山为基址 ",
+            "info3": "天然山水园 "
+          },
+          {
+            "imgUrl":"static/img/post/12b59f57fb21cb02.jpg",
+            "tit": "圆明园 ,一座举世文明的皇家园林,清代一座大型皇家御苑",
+            "info1": "圆明园 ",
+            "info2": "长春园 ",
+            "info3": "万春园 "
+          },
+          {
+            "imgUrl":"static/img/post/e2b60ed2f6001602.jpg",
+            "tit": "清华大学 ",
+            "info1": "中国ZUI高学府 ",
+            "info2": "初名京师大学堂 "
 
+          },
+          {
+            "imgUrl":"static/img/post/f62355bdfe550002.jpg",
+            "tit": "天坛公园 ",
+            "info1": "世界文化遗产 ",
+            "info2": "北京的标志性符号 ",
+            "info3": "古代祭天建筑群 "
+          }
 
+        ]
+      },
+      {
+        "spotDetail":[
+          {
+            "imgUrl":"static/img/post/24b3af9bd12bb7e3c7b1c8d5a2.jpg_80.jpg",
+            "tit": "上海--很感谢你来过,不遗憾你离开 ",
+            "info1": "上海四大名园 ",
+            "info2": "昆明湖、万寿山为基址 ",
+            "info3": "天然山水园 "
+          },
+          {
+            "imgUrl":"static/img/post/12b59f57fb21cb02.jpg",
+            "tit": "圆明园 ,一座举世文明的皇家园林,清代一座大型皇家御苑",
+            "info1": "圆明园 ",
+            "info2": "长春园 ",
+            "info3": "万春园 "
+          },
+          {
+            "imgUrl":"static/img/post/e2b60ed2f6001602.jpg",
+            "tit": "清华大学 ",
+            "info1": "中国ZUI高学府 ",
+            "info2": "初名京师大学堂 "
+
+          },
+          {
+            "imgUrl":"static/img/post/f62355bdfe550002.jpg",
+            "tit": "天坛公园 ",
+            "info1": "世界文化遗产 ",
+            "info2": "北京的标志性符号 ",
+            "info3": "古代祭天建筑群 "
+          }
+
+        ]
+      },
+      {
+        "spotDetail":[
+          {
+            "imgUrl":"static/img/post/24b3af9bd12bb7e3c7b1c8d5a2.jpg_80.jpg",
+            "tit": "上海美食最强攻略",
+            "info1": "中国四大名园 ",
+            "info2": "昆明湖、万寿山为基址 ",
+            "info3": "天然山水园 "
+          },
+          {
+            "imgUrl":"static/img/post/12b59f57fb21cb02.jpg",
+            "tit": "上海二日休闲游",
+            "info1": "圆明园 ",
+            "info2": "长春园 ",
+            "info3": "万春园 "
+          },
+          {
+            "imgUrl":"static/img/post/e2b60ed2f6001602.jpg",
+            "tit": "清华大学 ",
+            "info1": "中国ZUI高学府 ",
+            "info2": "初名京师大学堂 "
+
+          },
+          {
+            "imgUrl":"static/img/post/f62355bdfe550002.jpg",
+            "tit": "天坛公园 ",
+            "info1": "世界文化遗产 ",
+            "info2": "北京的标志性符号 ",
+            "info3": "古代祭天建筑群 "
+          }
+
+        ]
+      }
+    ]
 }

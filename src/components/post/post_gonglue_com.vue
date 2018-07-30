@@ -1,6 +1,6 @@
 <template>
   <div class="details" >
-    <div class="detailsIn" v-for="n in post_data">
+    <div class="detailsIn" v-for="n in info">
       <div class="detailsLeft">
         <h3>{{n.tit}}</h3>
         <p> <span>{{n.info1}}</span><span class="detailCen">{{n.info2}}</span><span v-if="n.info3" >{{n.info3}}</span></p>
@@ -13,7 +13,7 @@
 <script>
     export default {
         name: "post_gonglue_com",
-      props:["post_data"],
+      props:["info"],
     }
 </script>
 

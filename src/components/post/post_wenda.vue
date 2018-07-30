@@ -5,14 +5,14 @@
         <i class="iconfont icon-danjiantouyou youjiantou"></i>
       </div>
       <div class="wenda_cen">
-        <a href="javascript:;" @click="tab(1)">全部</a>
-        <a href="javascript:;" @click="tab(2)">线路</a>
-        <a href="javascript:;" @click="tab(3)">交通</a>
-        <a href="javascript:;" @click="tab(4)">机场</a>
-        <a href="javascript:;" @click="tab(5)">住宿</a>
-        <a href="javascript:;" @click="tab(6)">火车</a>
-        <a href="javascript:;" @click="tab(7)">虹桥</a>
-        <a href="javascript:;" @click="tab(8)">旅行</a>
+        <a href="javascript:;" :class="{color:falg == 1}" @click="tab(1)">全部</a>
+        <a href="javascript:;" :class="{color:falg == 2}" @click="tab(2)">线路</a>
+        <a href="javascript:;" :class="{color:falg == 3}" @click="tab(3)">交通</a>
+        <a href="javascript:;" :class="{color:falg == 4}" @click="tab(4)">机场</a>
+        <a href="javascript:;" :class="{color:falg == 5}"@click="tab(5)">住宿</a>
+        <a href="javascript:;" :class="{color:falg == 6}" @click="tab(6)">火车</a>
+        <a href="javascript:;" :class="{color:falg == 7}" @click="tab(7)">虹桥</a>
+        <a href="javascript:;" :class="{color:falg == 8}" @click="tab(8)">旅行</a>
       </div>
       <div class="wenda_show">
         <div class="wenda_show_one" v-show="falg == 1" v-for="n in post_data">
@@ -137,7 +137,7 @@
       props:["post_data"],
       data(){
           return {
-            falg:1
+            falg:1,
           }
       },
       methods:{
@@ -149,6 +149,10 @@
 </script>
 
 <style scoped>
+  .color{
+    background: #fec529;
+    color:#ffffff !important;
+  }
   .wenda{
     background: #ffffff;
   }
@@ -189,10 +193,6 @@
     border-radius: 23px;
     margin:0 0.05rem;
     flex-shrink: 0;
-  }
-  .wenda_cen a:hover{
-    background: #fec529;
-    color:#ffffff;
   }
   .wenda_show{
     width:100%;

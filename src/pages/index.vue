@@ -50,10 +50,11 @@
       return {
         sco:false,
         title:[],
-        spot:[],
+
         comment:[],
         localInfo:[],
         spotDetail:[],
+        spot:[],
         spot1:[],
         index:0
       }

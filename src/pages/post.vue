@@ -20,7 +20,7 @@
         <!--热门问答-->
         <post_wenda :post_data="post_data.wenda"></post_wenda>
         <!--玩法攻略-->
-        <post_gonglue :post_data="post_data"></post_gonglue>
+        <post_gonglue :post_data="post_data" :info="info" @fchange="pchange"></post_gonglue>
 
     </div>
   </div>
@@ -43,7 +43,12 @@
         Post_wenda, Post_wanle, Post_zhinan, Post_wanfa, Post_put, Post_travel, Post_nav, Post_header},
       data(){
         return {
-          post_data:[],
+          info:[],
+          post_data:{},
+          all:[],
+          index:0,
+          // new:[],
+          // jinghua:[],
           sco:false
         }
       },
@@ -53,9 +58,15 @@
             if(response.ok){
               response.json().then(data=>{
                 this.post_data = data;
+                this.all = data.spotDetail_one;
+                this.info = this.all[this.index].spotDetail; //获取子组件数据
               })
             }
           })
+        },
+        pchange(index){
+          this.index=index;
+          this.info = this.all[this.index].spotDetail;
         },
         handle(){
           var scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
@@ -64,13 +75,47 @@
           }else if(scrollTop>=45){
             this.sco = true
           }
-        }
+        },
       },
       created(){//调用拿到的函数
         this.post();
+
       },
       mounted(){
-          window.addEventListener("scroll",this.handle,true)
+
+          window.addEventListener("scroll",this.handle,true);
+
+          let navB = document.querySelector("#navB");
+          let hanlu = document.querySelector("#hanlu");
+          let tqb = document.querySelector("#t_qb");
+          let tqx = document.querySelector("#t_qx");
+          let tjh = document.querySelector("#t_jh");
+          window.onscroll = function () {
+            //获取下页面的滚动条高度
+            let top = document.documentElement.scrollTop || document.body.scrollTop;
+
+            //判断比较是否达到700的高度
+            if(top >= 2451) {
+              //是的话，就给加上class名
+              hanlu.classList.add('show1');
+              navB.classList.add('show');
+            } else {
+              //如果不是，那么删除class名
+              navB.classList.remove('show');
+              hanlu.classList.remove('show1');
+            }
+          };
+
+        tqb.onclick = function(){
+          $('html,body').animate({'scrollTop':'2455px'},500);
+        };
+        tqx.onclick = function(){
+          $('html,body').animate({'scrollTop':'2455px'},500);
+        };
+        tjh.onclick = function(){
+          $('html,body').animate({'scrollTop':'2455px'},500);
+        }
+
       },
       destroyed(){
           window.removeEventListener("scroll",this.handle,true)
@@ -84,7 +129,8 @@
 }
  .post{
    height: 100%;
-   display: flex;
+  display: flex;
+   /*position:relative;*/
    width:100%;
    flex-direction:column ;
  }

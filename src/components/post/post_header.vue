@@ -7,7 +7,7 @@
            <a>{{n.hea_size}}</a>
          </div>
          <div class="banyuan">
-           <img src="../../assets/img/post/banyuan.png" alt="">
+           <!--<img src="../../assets/img/post/banyuan.png" alt="">-->
          </div>
        </div>
      </div>

@@ -27,9 +27,9 @@
   .header_reight_box{
     display: flex;
     align-items: center;
-
   }
   .header_box{
+    /*position:absolute;*/
     width: 100%;
     height:0.45rem;
     padding:0 0.21rem;
