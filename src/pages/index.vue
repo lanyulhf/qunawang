@@ -10,8 +10,7 @@
   <!--分类导航-->
   <Title :title="title" class="title"></Title>
   <!--热门目的地-->
-
-  <hot-des :spot="spot" @fchange="pchange"></hot-des>
+  <hot-des :spot="spot"  @fchange="pchange"></hot-des>
   <!--总有你要的低价-->
   <low-price></low-price>
   <!--当地玩乐-->
@@ -50,13 +49,12 @@
       return {
         sco:false,
         title:[],
-
+        spot:[],
         comment:[],
         localInfo:[],
         spotDetail:[],
-        spot:[],
+        index:0,
         spot1:[],
-        index:0
       }
     },
     methods:{
@@ -70,11 +68,10 @@
             response.json().then(data=>{
               this.title = data.productTitle;
               this.spot1 = data.spot;
+              this.spot = this.spot1[this.index].spotInfo;
               this.comment = data.comment;
               this.localInfo = data.localInfo;
               this.spotDetail = data.spotDetail;
-              // this.spot = this.spot1[this.index].data1;
-              this.spot = this.spot1[this.index].spotInfo;
             })
           }
         })

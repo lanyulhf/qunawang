@@ -20,11 +20,11 @@
     export default {
         name: "lists",
         components: {Hotel, Lists_foot, Lists_img},
-      methods:{
+        methods:{
           back(){
             this.$router.go(-1);
           }
-      }
+        }
     }
 </script>
 

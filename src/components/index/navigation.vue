@@ -92,12 +92,12 @@
 }
 .navigationIn .right p{
   margin:1px 0;
-
-
 }
-.navigationIn .speRight{
-  border-top-right-radius:4px;
+.navigationIn .right .speRight{
+
+  border-top-right-radius:0.04rem;
 }
+
 .navigationIn .right{
   width:33%;
 }
@@ -122,9 +122,9 @@
   margin:0 1px;
 }
 .bottom span:nth-child(1){
-  border-bottom-left-radius:4px;
+  border-bottom-left-radius:0.04rem;
 }
 .bottom span:nth-child(3){
-  border-bottom-right-radius:4px;
+  border-bottom-right-radius:0.04rem;
 }
 </style>

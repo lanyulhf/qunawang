@@ -129,8 +129,7 @@
 }
  .post{
    height: 100%;
-  display: flex;
-   /*position:relative;*/
+   display: flex;
    width:100%;
    flex-direction:column ;
  }

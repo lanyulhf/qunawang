@@ -120,16 +120,7 @@
     },
     {
       "spotInfo":[
-        {
-          "tit": "颐和园",
-          "imgUrl": "../../static/img/index/d274c92de14c93da.water.jpg_256x160_a6703da7.jpg",
-          "info": "皇家行宫御园"
-        },
-        {
-          "tit": "故宫",
-          "imgUrl": "../../static/img/index/adca619faaab0898245dc4ec482b5722.jpg_256x160_f977b5d4.jpg",
-          "info": "世界宫殿典范"
-        },
+
         {
           "tit": "西安",
           "imgUrl": "../../static/img/index/xian.png",
@@ -139,22 +130,27 @@
           "tit": "巴厘岛",
           "imgUrl": "../../static/img/index/34b8ccd630a37302.jpg_r_390x260x90_1a866374.jpg",
           "info": "酒店上门接送，自由行"
-        }
-      ]
-    },
-    {
-      "spotInfo":[
-
+        },
         {
           "tit": "恭王府",
           "imgUrl": "../../static/img/index/51b63883c25f5d87af3c08bb016e2bd7.jpg_256x160_2c506073.jpg",
           "info": "一起去看看和坤家"
         },
         {
+          "tit": "成都",
+          "imgUrl": "../../static/img/index/panda.png",
+          "info": "麻辣鲜香大都市"
+        },
+        {
           "tit": "八达岭",
           "imgUrl": "../../static/img/index/2b3b94de99c0a425a3.img.jpg_256x160_6b62ea82.jpg",
           "info": "不到长城非好汉"
-        },
+        }
+      ]
+    },
+    {
+      "spotInfo":[
+
         {
           "tit": "颐和园",
           "imgUrl": "../../static/img/index/d274c92de14c93da.water.jpg_256x160_a6703da7.jpg",
@@ -164,17 +160,17 @@
           "tit": "故宫",
           "imgUrl": "../../static/img/index/adca619faaab0898245dc4ec482b5722.jpg_256x160_f977b5d4.jpg",
           "info": "世界宫殿典范"
+        },
+        {
+          "tit": "三亚",
+          "imgUrl": "../../static/img/index/8db08d342fdbb13c93835fbb.jpg_256x160_96f65102.jpg",
+          "info": "度假好地方"
         }
       ]
     },
     {
       "spotInfo":[
 
-        {
-          "tit": "三亚",
-          "imgUrl": "../../static/img/index/8db08d342fdbb13c93835fbb.jpg_256x160_96f65102.jpg",
-          "info": "度假好地方"
-        },
         {
           "tit": "丽江",
           "imgUrl": "../../static/img/index/4f8bf15c9a790cf7.jpg_r_390x260x90_b0fbfd85.jpg",
@@ -207,9 +203,6 @@
         }
       ]
     }
-
-
-
   ],
 "comment":[
   {
@@ -273,7 +266,7 @@
  ],
   "spotDetail":[
     {
-
+      "id":1,
       "info":[
         {
           "imgUrl":"../../static/img/index/24b3af9bd12bb7e3c7b1c8d5a2.jpg_80.jpg",
