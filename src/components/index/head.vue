@@ -1,7 +1,7 @@
 <template>
     <div class="headerBox" :class="{active:isActive}">
       <div class="header">
-        <a href=""><span>西安</span><span><i class="iconfont icon-icon1"></i></span></a>
+        <a href=""><span>西安</span><span><i class="iconfont icon-xiala"></i></span></a>
         <a href="javascript:">
           <span class="search"><i class="iconfont icon-sousuo"></i></span>
           <input type="text" placeholder="如家快捷酒店北京...">
