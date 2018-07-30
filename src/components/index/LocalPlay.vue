@@ -45,7 +45,6 @@
 .localPlay .center{
   color:#171717;
  float:left;
-  /*display: flex;*/
 }
 .localPlay .centerIn img{
   margin-bottom: 0.14rem;

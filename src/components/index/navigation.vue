@@ -12,7 +12,7 @@
           <p>汽车票·船票</p>
         </div>
         <div class="right">
-          <p>火车票</p>
+          <p class="speRight">火车票</p>
           <p>专车·租车</p>
         </div>
       </div>
@@ -92,7 +92,11 @@
 }
 .navigationIn .right p{
   margin:1px 0;
-  border-radius:3px;
+
+
+}
+.navigationIn .speRight{
+  border-top-right-radius:4px;
 }
 .navigationIn .right{
   width:33%;
@@ -116,5 +120,11 @@
   }
 .bottom span:nth-child(2){
   margin:0 1px;
+}
+.bottom span:nth-child(1){
+  border-bottom-left-radius:4px;
+}
+.bottom span:nth-child(3){
+  border-bottom-right-radius:4px;
 }
 </style>
