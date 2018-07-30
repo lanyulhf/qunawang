@@ -5,7 +5,7 @@
           <h3>{{item.tit}}</h3>
           <p> <span>{{item.info1}}</span><span class="detailCen">{{item.info2}}</span><span v-if="item.info3" >{{item.info3}}</span></p>
         </div>
-        <div class="detailRight"><img :src="item.imgUrl" alt="图片"></div>
+        <div class="detailRight"><img v-lazy="item.imgUrl" alt="图片"></div>
       </div>
     </div>
 </template>

@@ -2,7 +2,7 @@
 
   <div class="spotInfo" >
     <div class="spotInfoIn"  v-for="item in localInfo">
-    <img  :src="item.imgUrl" alt="图片">
+    <img  v-lazy="item.imgUrl" alt="图片">
     <h3>{{item.tit}}</h3>
     <p>{{item.info}}</p>
   </div>

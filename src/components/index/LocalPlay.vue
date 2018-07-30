@@ -4,7 +4,7 @@
         <h3 class="top">当地玩乐</h3>
         <div class="center" v-for="item in comment">
           <div class="centerIn" >
-             <img :src="item.imgUrl" alt="图片">
+             <img v-lazy="item.imgUrl" alt="图片">
                 <p v-for="i in item.info">
                   <span>{{i.num}}</span>
                   <span class="info">{{i.info}}</span>
