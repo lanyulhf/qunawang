@@ -1,7 +1,7 @@
 <template>
     <div class="headerBox" :class="{active:isActive}">
       <div class="header">
-        <a href=""><span>西安</span><span><i class="iconfont icon-xiala"></i></span></a>
+        <a href=""><span @click="goCity">{{cityHead}}</span><span><i class="iconfont icon-xiala"></i></span></a>
         <a href="javascript:">
           <span class="search"><i class="iconfont icon-sousuo"></i></span>
           <input type="text" placeholder="如家快捷酒店北京...">
@@ -12,13 +12,33 @@
 </template>
 
 <script>
+  import { Indicator } from 'mint-ui';
   export default {
     props:["isActive"],
     data(){
       return {
+        cityHead:"西安"
+      }
+    },
+    methods:{
+      goCity(){
+        Indicator.open('正在拼命加载中...');//点击出现加载中...
+        setTimeout(()=>{
+          Indicator.close();
+        },1000);
+
+        this.$router.push({ //路由跳转
+          path:'/choose',
+        })
 
       }
     },
+    created(){
+      this.cityHead=this.$route.query.cityL?this.$route.query.cityL:"西安";
+
+    }
+
+
 
 
   }
