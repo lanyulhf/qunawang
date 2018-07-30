@@ -1,7 +1,7 @@
 <template>
       <div>
           <div class="head">
-               <img class="left" src="../../static/img/order/left.jpg">
+               <img class="left" src="../../static/img/order/left.jpg" @click="back">
                 <!--<span>上海</span>-->
                 <!--<span>西安</span>-->
                 <!--<span>北京</span>-->
@@ -20,6 +20,11 @@
     export default {
         name: "lists",
         components: {Hotel, Lists_foot, Lists_img},
+      methods:{
+          back(){
+            this.$router.go(-1);
+          }
+      }
     }
 </script>
 
