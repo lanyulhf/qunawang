@@ -39,7 +39,6 @@
                 }
               })
           },
-
         handleScroll(){                                       //打印出滚动的距离
           var scrollTop = document.querySelector(".tittle").scrollTop
           console.log(scrollTop)

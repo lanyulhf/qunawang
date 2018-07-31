@@ -10,7 +10,7 @@
         </div>
         <div class="spot">
           <div class="spotInfo" v-for="item in spot">
-            <img v-lazy="item.imgUrl" alt="图片">
+            <img :src="item.imgUrl" alt="图片">
             <h3>{{item.tit}}</h3>
             <p>{{item.info}}</p>
           </div>
