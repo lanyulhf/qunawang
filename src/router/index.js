@@ -5,7 +5,7 @@ import service from '../pages/service/service'
 import mine from '../pages/mine/mine'
 import post from '../pages/post'
 import order from '../pages/order_form'
-// import choose from '../pages/choose'
+import chooseTwo from '../pages/chooseTwo'
 import calender from '../components/buy/calender'
 import choose from '../components/buy/choose'
 import planeTicket from '../pages/planeTicket'
@@ -65,6 +65,11 @@ export default new Router({
       path: '/choose',
       name: 'choose',
       component: choose
+    },
+    {
+      path: '/chooseTwo',
+      name: 'chooseTwo',
+      component: chooseTwo
     },
     {
       path: '/find',

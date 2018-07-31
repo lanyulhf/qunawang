@@ -19,7 +19,7 @@
               Indicator.close();
               this.$toast('购买成功!')
               this.$router.push({
-                path:'/plantTicket'
+                path:'/'
               })
             },500);
           }
@@ -37,7 +37,7 @@
       box-sizing: border-box;
       border-top: 1px solid #dce1e6;
       position: fixed;
-      bottom: 0;
+      bottom: 0.55rem;
     }
   .plane-foot a{
     font-size: 0.22rem;

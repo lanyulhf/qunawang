@@ -25,10 +25,7 @@ app.use("/api/post",(req,res)=>{
   res.json(post);
 })
 
-app.use("/api/plane",(req,res)=>{
-  res.header("Access-Control-Allow-Origin", "*");
-  res.json(plane);
-})
+
 app.use("/api/plane",(req,res)=>{
   res.header("Access-Control-Allow-Origin", "*");
   let id = req.query.id;

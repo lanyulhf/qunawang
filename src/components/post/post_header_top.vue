@@ -37,7 +37,7 @@
           },1000);
 
           this.$router.push({ //路由跳转
-            path:'/choose',
+            path:'/chooseTwo',
           })
 
         }

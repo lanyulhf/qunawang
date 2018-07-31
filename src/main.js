@@ -7,7 +7,7 @@ import "swiper/dist/css/swiper.css"
 import MintUI from 'mint-ui'
 import "mint-ui/lib/style.css"
 import store from './vuex/store'
-import jquery from './assets/js/jquery.js'
+require( './assets/js/jquery.js')
 import lazyload from "vue-lazyload"
 Vue.use(lazyload,
   { loading:'./static/img/index/loading(2).gif'})
@@ -19,7 +19,7 @@ Vue.config.productionTip = false
 new Vue({
   el: '#app',
   router,
-  jquery,
+  // jquery,
   store,
   components: { App },
   template: '<App/>'
