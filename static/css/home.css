@@ -1,0 +1,436 @@
+@charset "utf-8";
+/* CSS Document */
+body,div,p,ul,ol,li,dl,dt,dd,form,table,tr,td,h1,h2,h3,h4,h5,h6,fieldset,input,textarea,figure{
+	margin:0;
+	padding:0;
+}
+body{
+	width:100%;
+    font-family:"微软雅黑",Arial;
+    /* overflow: hidden; */
+	background:url(../homeImg/background.jpg) no-repeat ;
+	background-size:100% 100%;
+	height:820px;
+
+}
+a{
+	text-decoration:none;
+}
+ul,ol{
+	list-style:none;
+}
+img{
+	border: none;
+	display: block;
+}
+
+.hContent{
+	width:100%;
+	display: -webkit-flex;
+
+}
+.hContent .hcLeft{
+	width:20%;
+}
+
+/* 主页开始 */
+.hContent .hcRight{
+	width:80%;
+	height:100%;
+	
+}
+
+.hTheme{
+	display: -webkit-flex;
+	padding-left:10px;
+	padding-right:20px;
+	-webkit-justify-content:space-between;
+
+}
+.themeLeft{ 
+	/* width:100%; */
+	padding-left:50px;
+	background:url(../homeImg/theme.png) no-repeat left center;
+}
+.themeLeft h3{ 
+	display: inline-block;
+    color: rgba(255, 255, 255, 0.8);
+	font-size: 32px;
+	line-height:84px;
+}
+.themeLeft span{ 
+	color: rgba(255, 255, 255, 0.6);
+    font-style: italic;
+}
+.themeRight{
+	line-height:30px;
+	display: -webkit-flex;
+
+}
+.themeRight li:nth-child(1) a{
+	font-size: 12px;
+	color: rgba(255, 255, 255, 0.6);
+}
+.themeRight li:nth-child(2) a{
+	font-size: 12px;
+	color: #428bca;
+}
+.themeRight li:nth-child(3) a{
+	font-size: 12px;
+	color: rgba(0, 0, 0, 0.4);
+}
+.themeRight span{
+	font-family: "FontAwesome";
+    color: rgba(255, 255, 255, 0.6);
+}
+.hsmallBox{	
+	display: -webkit-flex;
+	-webkit-justify-content:center;
+	width:100%;
+	flex-wrap: wrap;
+	height:100%;
+}
+.hsmallBoxIn{
+	padding:0 12px;
+	box-sizing: border-box;
+	width:25%;
+	height:123px;
+}
+.hsmallBoxOne{
+	position:relative;		
+	border-radius:5px;	
+}
+.hsmallBoxOne:hover .frontage{
+	transform: rotateY(180deg);
+}
+
+.hsmallBoxOne:hover .reverse{
+	transform: rotateY(360deg);
+	opacity: 1;
+}
+
+.hsmallBoxIn:nth-child(2) .frontage{
+	background-color: #418bca;;;
+}
+.hsmallBoxIn:nth-child(3) .frontage{
+	background-color: #16a085;;
+}
+.hsmallBoxIn:nth-child(4) .frontage{
+	background-color: #3f4e62;;
+}
+.hsmallBoxOne .frontage{
+	width:100%;
+	height:123px;	
+	box-sizing:border-box;
+	position:absolute;
+	left:0px;
+	top:0px;
+	transition: all 0.5s;
+	transform-style: preserve-3d;
+	backface-visibility:hidden;
+	background-color: #d9544f;
+	z-index:100;
+	border-radius:5px;
+	padding: 15px;	
+}
+.hsmallBoxOne .frontage li:nth-child(1){
+	display: -webkit-flex;	
+	margin-bottom:10px;
+}
+.hsmallBoxIn:nth-child(1) .frontage li:nth-child(1) .frontBg{
+	width:50px;
+	height:50px;
+	display: inline-block;
+	background: url(../homeImg/white.png) no-repeat left center;
+}
+.hsmallBoxIn:nth-child(2) .frontage li:nth-child(1) .frontBg{
+	width:50px;
+	height:50px;
+	display: inline-block;
+	background: url(../homeImg/car.png) no-repeat left center;
+}
+.hsmallBoxIn:nth-child(3) .frontage li:nth-child(1) .frontBg{
+	width:50px;
+	height:50px;
+	display: inline-block;
+	background: url(../homeImg/$.png) no-repeat left center;
+}
+.hsmallBoxIn:nth-child(4) .frontage li:nth-child(1) .frontBg{
+	width:50px;
+	height:50px;
+	display: inline-block;
+	background: url(../homeImg/eye.png) no-repeat left center;
+}
+ .hsmallBoxOne .frontage li:nth-child(1) p{
+	display: -webkit-flex;
+	-webkit-flex-direction:column;
+	padding-left:5px;
+} 
+.hnews{
+	text-transform: uppercase;
+	font-size:12px;
+	color: rgba(255, 255, 255, 0.5);
+	margin-top:5px;
+}
+.hnum{
+	color:white;
+	font-size:30px;
+	font-family: "Roboto", "Arial", sans-serif;
+}
+.hsmallBoxOne .frontage li:nth-child(2){
+    font-size: 12px;
+    text-transform: uppercase;
+	color: rgba(255, 255, 255, 0.5);
+	display: -webkit-flex;
+	-webkit-justify-content:space-between;	
+}
+.hsmallBoxOne .hpercent{
+	text-align:center;
+	border-radius:3px;
+	color: white;
+	display: inline-block;
+	width:36px;
+	line-height:23px;
+	background-color: rgba(0, 0, 0, 0.1)
+}
+.hsmallBoxOne .frontage li:nth-child(3){
+	width:100%;
+	height:5px;
+	margin-top:-12px;
+	margin-bottom:12px;
+}
+.hsmallBoxOne .frontage li:nth-child(3) .progressL{
+	width:70%;
+	height:5px;
+	display: inline-block;
+	background: rgba(0, 0, 0, 0.15); 
+	border-top-left-radius:2px;
+	border-bottom-left-radius:2px;
+}
+.hsmallBoxOne .frontage li:nth-child(3) .progressR{
+	width:17%;
+	height:5px;
+	display: inline-block;
+	background: rgba(0, 0, 0, 0.08);
+	border-top-right-radius:2px;
+	border-bottom-right-radius:2px; 	
+}
+.reverse{
+	height:123px;
+	border-radius:5px;
+	width:100%;
+	box-sizing:border-box;
+	position: absolute;
+	top:0px;
+	left:0px;
+    background-color: white;
+    padding: 15px 30px 8px 30px;
+	text-align: center;
+	transition: all 0.5s;
+	transform-style: preserve-3d;
+	backface-visibility:hidden;
+	z-index:0;
+}
+.reverse a{
+	display:-webkit-flex;
+	-webkit-flex-direction:column;
+}
+.reverse a span{	
+	color: #717171;
+	font-size: 18px;
+	line-height:30px;	
+}
+.reverse a i{
+	color: #717171;
+	font-size: 64px;
+}
+.reverse a:hover i{
+	color:#428bca;
+	cursor:pointer;
+}
+.reverse a:hover span{
+	color:#428bca;
+	cursor:pointer;
+}
+/* hStatistic部分 */
+.hStatistic{
+	width:100%;
+	display:-webkit-flex;
+	/* -webkit-flex-direction:column; */
+	-webkit-flex-wrap:wrap;
+	box-sizing: border-box;
+}
+/* hStatisticLeft部分 */
+.hStatistic .hStatisticLeft{
+width:60%;
+  padding:15px;
+ border-radius:5px;
+}
+.hStatisticLeftIn{
+	border-radius:5px;
+	padding:15px;
+	background: rgba(0, 0, 0, 0.3);
+}	
+.hStatisticLeftIn .htitle{
+	padding-bottom:15px;
+	display:-webkit-flex;
+	-webkit-justify-content:space-between;
+	font-size: 22px;
+	line-height: 28px;
+	color:white;
+	position:relative;
+	font-weight:100 !important;
+}
+.hStatisticLeftIn .htitle .hClose{
+	position:absolute;
+	top:-17px;
+	right:0px;
+}
+.hStatisticLeftIn .htitle .hClose a i{
+	color: #f2f2f2;
+	font-size: 12px;
+	margin-left:5px;
+}
+.hStatisticLeftIn .chartBox{
+	padding:15px;
+	height:250px;
+}
+/* StatisticRight部分 */
+.hStatistic .StatisticRight{
+	width:33%;
+	height:100px;	
+	padding:15px;
+  }
+  .StatisticRightIn{
+	border-radius:5px;
+	padding:15px;
+	background: rgba(0, 0, 0, 0.3);           
+  }
+  .hStatistic .StatisticRight .htitle{
+	padding-bottom:15px;
+	display:-webkit-flex;
+	-webkit-justify-content:space-between;
+	font-size: 22px;
+	line-height: 28px;
+	color:white;
+	position:relative;
+	font-weight:100 !important;
+}
+.StatisticRightIn .htitle .hClose{
+	position:absolute;
+	top:-17px;
+	right:0px;
+}
+.StatisticRightIn .htitle .hClose a i{
+	color: #f2f2f2;
+	font-size: 12px;
+	margin-left:5px;
+}
+.StatisticRightIn .speSpan{
+	font-weight:100;
+	font-size:16px;
+}
+.StatisticRightIn .chartBox{
+	width:100%;
+	height:190px;
+}
+.StatisticRightIn .progress{
+	padding:15px;
+}
+.StatisticRightIn .progress .hnum{
+	display:-webkit-flex;
+	-webkit-justify-content:space-between;
+}
+.StatisticRightIn .progress .hnum span{
+	font-size: 24px;
+	font-weight:100;
+}
+.StatisticRightIn .progress .hnum h3{
+	display:-webkit-flex;
+}
+.StatisticRightIn .progress .hnum h3 i{
+	font-size: 24px;
+	margin-right:5px;
+}
+
+.StatisticRightIn .progress .hnum .right{
+	font-size: 12px;	
+	text-align:center;
+	line-height:29px;
+	border-radius:3px;
+	width:36px;
+	height:29px;
+	background-color: rgba(0, 0, 0, 0.1);	
+}
+.progress .bgTwo{
+	height:5px;
+	margin-top:-10px;
+}
+.progress .bgTwo span:nth-child(1){
+	display: inline-block;
+	width:42%;
+	height:5px;
+	line-height:5px; 
+	font-size:5px;
+	background-color: rgba(0, 0, 0, 0.4); 
+}
+.progress .bgTwo span:nth-child(2){
+	display: inline-block;
+	line-height:5px; 	
+	width:58%;
+	height:5px;
+	background-color: rgba(0, 0, 0, 0.2); 
+}
+.progress .txtCon{
+	font-size:12px;
+	color:white;
+	margin-top:15px;
+}
+
+	
+@media screen and (max-width: 1200px){
+	.hsmallBox .hsmallBoxIn{
+		width: 50%;
+		margin-bottom:24px;
+	}
+	
+}
+@media screen and (max-width: 760px){
+   .hsmallBox .hsmallBoxIn{
+	   width: 100%;
+	   margin-bottom:24px;
+   }
+   .hTheme{
+	   -webkit-flex-direction:column;
+	   -webkit-justify-content:space-around;
+   }
+   .themeLeft{
+	   text-align: center;
+   }
+   .themeRight{
+	text-align: center;
+	}
+	
+}
+@media screen and (max-width:760px){
+	.hContent .hcRight{
+		width:100%;
+		height:100%;
+	}
+	.hContent .hcleft{
+		width:10%;
+		height:100%;
+	}	
+		
+}
+@media screen and (max-width:1200px){
+	.hStatistic .hStatisticLeft{
+		width:100%;
+		height:100%;
+	}
+	.hContent .StatisticRight{
+		width:100%;
+		height:100%;
+	}	
+		
+}

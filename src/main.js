@@ -1,26 +1,21 @@
 // The Vue build version to load with the `import` command
 // (runtime-only or standalone) has been set in webpack.base.conf with an alias.
 import Vue from 'vue'
-import App from './App'
 import router from './router'
-import "swiper/dist/css/swiper.css"
-import MintUI from 'mint-ui'
-import "mint-ui/lib/style.css"
-import store from './vuex/store'
-require( './assets/js/jquery.js')
-import lazyload from "vue-lazyload"
-Vue.use(lazyload,
-  { loading:'./static/img/index/loading(2).gif'})
-Vue.use(MintUI)
+import ElementUI from 'element-ui'
+import 'element-ui/lib/theme-chalk/index.css'
+import App from './App.vue'
+import echarts from 'echarts/dist/echarts'
+Vue.prototype.$echarts = echarts
+
+Vue.use(ElementUI)
 
 Vue.config.productionTip = false
-
-/* eslint-disable no-new */
 new Vue({
   el: '#app',
+  render: h => h(App),
   router,
-  // jquery,
-  store,
+  echarts,
   components: { App },
   template: '<App/>'
 })
