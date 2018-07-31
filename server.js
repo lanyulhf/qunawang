@@ -29,18 +29,33 @@ app.use("/api/plane",(req,res)=>{
   res.header("Access-Control-Allow-Origin", "*");
   res.json(plane);
 })
-app.use("/api/plane",(req,res)=>{ //接口
-  res.header("Access-Control-Allow-Origin", "*");  //允许跨域
+app.use("/api/plane",(req,res)=>{
+  res.header("Access-Control-Allow-Origin", "*");
   let id = req.query.id;
-  if(id){
+  let ids = req.query.ids;
+  if(ids){
+    for(let i=0;i<plane.planeTime.planeInt.length;i++){
+      if( id == plane.planeTime.planeInt[i].id){
+
+        res.json(plane.planeTime.planeInt[i].piao[ids])
+
+      }
+    }
+  }else if(id){
     for(let i=0;i<plane.planeTime.planeInt.length;i++){
       if( id == plane.planeTime.planeInt[i].id){
         res.json(plane.planeTime.planeInt[i])
+
       }
     }
-  }else{
+  } else{
     res.json(plane)
   }
+
+
+
+
+
 })
 
 app.listen(3000,()=>{
