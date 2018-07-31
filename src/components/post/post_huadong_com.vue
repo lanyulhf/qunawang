@@ -2,7 +2,7 @@
   <div class="wanfa">
     <div class="wanfa_huadong">
       <div class="wanfa_one" v-for="n in post_data">
-        <img :src= "n.wanle_img">
+        <img v-lazy= "n.wanle_img">
         <p>{{n.wanle_size}}</p>
       </div>
     </div>

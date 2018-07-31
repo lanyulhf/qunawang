@@ -27,11 +27,16 @@
 </template>
 
 <script>
+  import { Indicator } from 'mint-ui';
     export default {
         name: "planeProduct",
       props:["items","idx"],
       methods:{
         goWhere(i){
+          Indicator.open('正在拼命加载中...');
+          setTimeout(()=>{
+            Indicator.close();
+          },1000);
           this.$router.push({
             path:'/planePiao',
             query:{

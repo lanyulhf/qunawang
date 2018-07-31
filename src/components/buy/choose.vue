@@ -29,14 +29,14 @@
           goto(i){
             if(this.$route.query.id ==1){     //点击左边城市返回的值
               this.$router.push({
-                path:'/',
+                path:'/planeTicket',
                 query:{
                   cityL:i
                 }
               })
             }else if (this.$route.query.id ==2){  //点击右边城市返回的值
               this.$router.push({
-                path:'/',
+                path:'/planeTicket',
                 query:{
                   cityR:i
                 }

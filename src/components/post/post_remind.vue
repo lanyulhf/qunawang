@@ -7,7 +7,7 @@
       <div class="hua_max">
         <div class="huadong_box" v-for="n in post_data">
           <div class="huadong_one">
-            <img :src=n.remind_img>
+            <img v-lazy=n.remind_img>
             <p>
               {{n.remind_size}}
               <a>{{n.remind_qing}}</a>

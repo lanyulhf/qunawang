@@ -3,9 +3,9 @@
     <div class="navigation">
       <div class="navigationIn">
         <div class="left">
-         <router-link to="/planeTicket" >
+
           <img src="../../assets/img/index/hotel.png" alt="图片">
-         </router-link>
+
         </div>
         <div class="center">
           <p >低价机票</p>
@@ -17,7 +17,9 @@
         </div>
       </div>
         <div class="navigationIn navCenter" >
-        <div class="left"><img src="../../assets/img/index/ticket.png" alt="图片"></div>
+          <!--<router-link to="/planeTicket" >-->
+        <div class="left" @click="goTic"><img src="../../assets/img/index/ticket.png" alt="图片"></div>
+          <!--</router-link>-->
         <div class="center">
           <p >特价酒店</p>
           <p>海外酒店</p>
@@ -53,6 +55,21 @@
 <script>
     export default {
       name: "navigation",
+      methods:{
+        goTic(){
+          this.$router.push({
+            path:"/planeTicket",
+            query:{
+              cityL:"北京",
+              cityR:"上海",
+              monthL:new Date().getMonth(),
+              dateL:new Date().getDate(),
+              monthR:new Date().getMonth()+1,
+              dateR:new Date().getDate()+1,
+            }
+          });
+        }
+      }
     }
 </script>
 

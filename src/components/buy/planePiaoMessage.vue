@@ -8,7 +8,7 @@
         <a>{{list.slocal}}</a>
       </div>
       <div class="gogo">
-        <a href="">ss</a>
+        <a href=""></a>
         <div class="top-line"></div>
       </div>
       <div class="stime">
@@ -95,7 +95,7 @@
     border-right: 1px solid #999;
     position: absolute;
     right: 0;
-    top: 0.27rem;
+    top: 0.12rem;
   }
   .pro-foot{
     width: 100%;

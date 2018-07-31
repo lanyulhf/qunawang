@@ -5,7 +5,7 @@
         <h3>{{n.tit}}</h3>
         <p> <span>{{n.info1}}</span><span class="detailCen">{{n.info2}}</span><span v-if="n.info3" >{{n.info3}}</span></p>
       </div>
-      <div class="detailRight"><img :src="n.imgUrl"></div>
+      <div class="detailRight"><img v-lazy="n.imgUrl"></div>
     </div>
   </div>
 </template>

@@ -2,7 +2,7 @@
   <div class="header_box" :class="{active:isActive}">
     <div class="header_reight_box" v-for="n in post_data.header02">
       <i class="iconfont icon-jiantou4 header_prev"></i>
-      <p class="place">{{n.hea_tit}}</p>
+      <p class="place" @click="goCity">{{city}}</p>
       <i class="iconfont icon-sanjiao_xia header_sanjiao"></i>
     </div>
     <div class="input_box">
@@ -17,9 +17,35 @@
 </template>
 
 <script>
+
+  import { Indicator } from 'mint-ui';
+
     export default {
         name: "post_header_top",
       props:["post_data","isActive"],
+
+      data(){
+          return{
+            city:"上海"
+          }
+      },
+      methods:{
+        goCity(){
+          Indicator.open('正在拼命加载中...');//点击出现加载中...
+          setTimeout(()=>{
+            Indicator.close();
+          },1000);
+
+          this.$router.push({ //路由跳转
+            path:'/choose',
+          })
+
+        }
+      },
+      created(){
+          this.city=this.$route.query.cityL?this.$route.query.cityL:"上海";
+
+      }
     }
 </script>
 
@@ -48,7 +74,7 @@
   .place{
     font-size: 0.17rem;
     color:#ffffff;
-    margin:0 0.07rem 0 0.1rem;
+    /*margin:0 0.07rem 0 0.1rem;*/
   }
   .header_sanjiao{
     font-size: 0.15rem;
@@ -85,7 +111,6 @@
     font-size: 0.16rem;
   }
   .active{
-    color:black !important;
     position: fixed;
     top:0;
     transtion:all 0.5;

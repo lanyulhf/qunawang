@@ -3,7 +3,7 @@
   <div class="nav">
     <div class="nav_box">
       <div class="nav_one" v-for="n in post_data.nav">
-        <img :src="n.nav_img">
+        <img v-lazy="n.nav_img">
         <span>{{n.nav_tit}}</span>
       </div>
     </div>

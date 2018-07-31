@@ -36,6 +36,7 @@
     import Post_wanle from "../components/post/post_wanle";
     import Post_wenda from "../components/post/post_wenda";
     import Post_gonglue from "../components/post/post_gonglue";
+
     export default {
         name: "post",
       components: {
@@ -43,12 +44,10 @@
         Post_wenda, Post_wanle, Post_zhinan, Post_wanfa, Post_put, Post_travel, Post_nav, Post_header},
       data(){
         return {
-          info:[],
+          info:[],//获取子组件数据
           post_data:{},
-          all:[],
+          all:[],//要切换的数据
           index:0,
-          // new:[],
-          // jinghua:[],
           sco:false
         }
       },
@@ -58,7 +57,7 @@
             if(response.ok){
               response.json().then(data=>{
                 this.post_data = data;
-                this.all = data.spotDetail_one;
+                this.all = data.spotDetail_one; //点击切换的数据
                 this.info = this.all[this.index].spotDetail; //获取子组件数据
               })
             }

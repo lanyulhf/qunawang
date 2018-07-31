@@ -28,7 +28,7 @@
         </div>
       </div>
       <div class="submit">
-        <router-link :to="{path:'/planeTime'}"><a href="#">搜索</a></router-link>
+        <router-link :to="{path:'/planeTime'}"><a href="#"  @click="lazyGo">搜索</a></router-link>
       </div>
     </div>
   </div>
@@ -36,6 +36,7 @@
 </template>
 
 <script>
+  import { Indicator } from 'mint-ui';
     export default {
         name: "planeSearch",
       data(){
@@ -53,6 +54,13 @@
           }
       },
       methods:{
+          lazyGo(){
+            Indicator.open('加载中...');
+            setTimeout(()=>{
+              Indicator.close();
+            },1000);
+
+          },
           goCity(i){                //左右城市点击传递不同id，城市列表页进行不同筛选
             this.$router.push({
               path:'/choose',
@@ -102,10 +110,10 @@
       created(){
           this.$store.state.leftCity = this.$route.query.cityL?this.$route.query.cityL:"北京";
           this.$store.state.rightCity = this.$route.query.cityR?this.$route.query.cityR:"上海";
-          this.$store.state.startMonthL = this.$route.query.monthL?this.$route.query.monthL:"3";
-          this.$store.state.startDateL = this.$route.query.dateL?this.$route.query.dateL:"5";
-          this.$store.state.startMonthR = this.$route.query.monthR?this.$route.query.monthR:"3";
-          this.$store.state.startDateR = this.$route.query.dateR?this.$route.query.dateR:"6";
+          this.$store.state.startMonthL = this.$route.query.monthL?this.$route.query.monthL:new Date().getMonth()+1;
+          this.$store.state.startDateL = this.$route.query.dateL?this.$route.query.dateL:new Date().getDate();
+          this.$store.state.startMonthR = this.$route.query.monthR?this.$route.query.monthR:new Date().getMonth()+1;
+          this.$store.state.startDateR = this.$route.query.dateR?this.$route.query.dateR:new Date().getDate()+1;
           if(this.$store.state.startMonthR || this.$store.state.startDateR){
             this.li3(3);
           }else if (this.$store.state.startMonthL || this.$store.state.startDateL){

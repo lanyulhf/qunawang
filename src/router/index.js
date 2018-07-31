@@ -5,13 +5,14 @@ import service from '../pages/service/service'
 import mine from '../pages/mine/mine'
 import post from '../pages/post'
 import order from '../pages/order_form'
-
+// import choose from '../pages/choose'
 import calender from '../components/buy/calender'
 import choose from '../components/buy/choose'
 import planeTicket from '../pages/planeTicket'
 import planeTime from '../pages/planeTime'
 import planePiao from '../pages/planePiao'
 import find from '../pages/find/find'
+import planeOrder from '../pages/planeOrder'
 import lists from '../pages/lists'
 
 Vue.use(Router)
@@ -84,6 +85,12 @@ export default new Router({
       path: '/planeTime',
       name: 'planeTime',
       component: planeTime
-    },
+    }
+    ,{
+      path:'/planeOrder',
+      name:'planeOrder',
+      component: resolve => require(["../pages/planeOrder"],resolve)
+    }
+
   ]
 })

@@ -1,5 +1,5 @@
 <template>
-    <li class="product">
+    <li class="product" @click="goOrder(fid,idx)">
       <div class="pro-left">
         <span class="tit">{{items.title}}</span>
         <span>{{items.stitle}}</span>
@@ -12,9 +12,26 @@
 </template>
 
 <script>
+  import { Indicator } from 'mint-ui';
     export default {
         name: "planePiaoProduct",
-      props:["items"]
+      props:["items","fid","idx"],
+      methods:{
+          goOrder(i,j){
+            Indicator.open('加载中...');
+            setTimeout(()=>{
+              Indicator.close();
+            },500);
+
+            this.$router.push({
+              path:'/planeOrder',
+              query:{
+                id:i,
+                ids:j
+              }
+            })
+          }
+      }
     }
 </script>
 

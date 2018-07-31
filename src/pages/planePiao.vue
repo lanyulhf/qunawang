@@ -1,9 +1,9 @@
 <template>
   <div class="zti">
-    <plane-time-head></plane-time-head>
+    <plane-piao-head></plane-piao-head>
     <div class="content">
       <plane-piao-message :list="List"></plane-piao-message>
-      <plane-piao-prodyct-list :list="List.piao"></plane-piao-prodyct-list>
+      <plane-piao-prodyct-list :list="List.piao" :pid="$route.query.id"></plane-piao-prodyct-list>
     </div>
   </div>
 </template>
@@ -12,9 +12,10 @@
     import PlaneTimeHead from "../components/buy/planeTimeHead";
     import PlanePiaoMessage from "../components/buy/planePiaoMessage";
     import PlanePiaoProdyctList from "../components/buy/planePiaoProdyctList";
+    import PlanePiaoHead from "../components/buy/planePiaoHead";
     export default {
         name: "planePiao",
-      components: {PlanePiaoProdyctList, PlanePiaoMessage, PlaneTimeHead},
+      components: {PlanePiaoHead, PlanePiaoProdyctList, PlanePiaoMessage, PlaneTimeHead},
       data(){
         return{
           List:[]

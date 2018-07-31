@@ -5,7 +5,7 @@
     </div>
     <div class="wanfa_huadong">
       <div class="wanfa_one" v-for="j in n.wanfa_cen">
-        <img :src= "j.wanfa_img">
+        <img v-lazy= "j.wanfa_img">
         <p>{{j.wanfa_size}}</p>
       </div>
     </div>

@@ -148,10 +148,9 @@
         bend(index,i){                              //点击任意时间返回月份和天数
           this.sendday.month = index;
           this.sendday.date = i;
-          console.log(this.sendday)
           if(this.$route.query.id == 1){
             this.$router.push({
-              path:'/',
+              path:'/planeTicket',
               query:{
                 monthL:this.sendday.month,
                 dateL:this.sendday.date
@@ -159,7 +158,7 @@
             })
           }else if (this.$route.query.id == 2){
             this.$router.push({
-              path:'/',
+              path:'/planeTicket',
               query:{
                 monthR:this.sendday.month,
                 dateR:this.sendday.date

@@ -10,6 +10,7 @@ var store = new Vuex.Store({
       startDateL:new Date().getDate(),
       startMonthR:new Date().getMonth()+1,
       startDateR:new Date().getDate()+2,
+      totalPrice:0
     },
     mutations:{
 

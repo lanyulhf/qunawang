@@ -5,7 +5,7 @@
       </div>
       <div class="wanle_huadong">
         <div class="wanle_one" v-for="j in n.wanle_cen">
-          <img :src= "j.wanle_img">
+          <img v-lazy= "j.wanle_img">
           <p>{{j.wanle_size}}</p>
           <p class="wanle_qian">{{j.wanle_qian}}<span>起</span></p>
         </div>

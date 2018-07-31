@@ -7,35 +7,64 @@
             <span>精华</span>
           </div>
         </div>
-        <div class="jingyan">
-          <div class="gong_wan">
-            <span :class="{hlspan01:a == 0}" @click=dian_clock(0)>玩法</span>
-            <i class="iconfont icon-sanjiao_xia header_sanjiao"></i>
+        <div class="dian_maxbox">
+          <div class="jingyan">
+            <div class="gong_wan">
+              <span :class="{hlspan01:a == 0}" @click=dian_clock(0)>玩法</span>
+              <i class="iconfont icon-sanjiao_xia header_sanjiao"></i>
+            </div>
+            <div class="gong_wan">
+              <span :class="{hlspan01:a == 1}" @click=dian_clock(1)>旅行经验</span>
+              <i class="iconfont icon-sanjiao_xia header_sanjiao"></i>
+            </div>
+            <div class="gong_wan">
+              <span :class="{hlspan01:a == 2}" @click=dian_clock(2)>人群</span>
+              <i class="iconfont icon-sanjiao_xia header_sanjiao"></i>
+            </div>
+            <div class="gong_wan">
+              <span  :class="{hlspan01:a == 3}" @click=dian_clock(3)>时间</span>
+              <i class="iconfont icon-sanjiao_xia header_sanjiao"></i>
+            </div>
           </div>
-          <div class="gong_wan">
-            <span :class="{hlspan01:a == 1}" @click=dian_clock(1)>旅行经验</span>
-            <i class="iconfont icon-sanjiao_xia header_sanjiao"></i>
+          <div class="cen_box">
+            <div class="dian_center" v-show="a == 0">
+              <a href="javascript:;">嘉兴出发</a>
+              <a href="javascript:;">暑假</a>
+              <a href="javascript:;">毕业游</a>
+              <a href="javascript:;">深度游</a>
+              <a href="javascript:;">短途周末</a>
+              <a href="javascript:;">登山</a>
+              <a href="javascript:;">骑行</a>
+              <a href="javascript:;">徒步</a>
+              <a href="javascript:;">邮轮</a>
+              <a href="javascript:;">蜜月</a>
+            </div>
+            <div class="dian_center" v-show="a == 1">
+              <a href="javascript:;">深度游</a>
+              <a href="javascript:;">短途周末</a>
+              <a href="javascript:;">登山</a>
+              <a href="javascript:;">骑行</a>
+              <a href="javascript:;">徒步</a>
+              <a href="javascript:;">邮轮</a>
+              <a href="javascript:;">蜜月</a>
+            </div>
+            <div class="dian_center" v-show="a == 2">
+              <a href="javascript:;">暑假</a>
+              <a href="javascript:;">毕业游</a>
+              <a href="javascript:;">深度游</a>
+              <a href="javascript:;">徒步</a>
+              <a href="javascript:;">邮轮</a>
+              <a href="javascript:;">蜜月</a>
+            </div>
+            <div class="dian_center" v-show="a == 3">
+              <a href="javascript:;">登山</a>
+              <a href="javascript:;">骑行</a>
+              <a href="javascript:;">徒步</a>
+              <a href="javascript:;">邮轮</a>
+              <a href="javascript:;">蜜月</a>
+              <a href="javascript:;">蜜月</a>
+            </div>
           </div>
-          <div class="gong_wan">
-            <span :class="{hlspan01:a == 2}" @click=dian_clock(2)>人群</span>
-            <i class="iconfont icon-sanjiao_xia header_sanjiao"></i>
-          </div>
-          <div class="gong_wan">
-            <span  :class="{hlspan01:a == 3}" @click=dian_clock(3)>时间</span>
-            <i class="iconfont icon-sanjiao_xia header_sanjiao"></i>
-          </div>
-        </div>
-        <div class="dian_center">
-          <a href="javascript:;">嘉兴出发</a>
-          <a href="javascript:;">暑假</a>
-          <a href="javascript:;">毕业游</a>
-          <a href="javascript:;">深度游</a>
-          <a href="javascript:;">短途周末</a>
-          <a href="javascript:;">登山</a>
-          <a href="javascript:;">骑行</a>
-          <a href="javascript:;">徒步</a>
-          <a href="javascript:;">邮轮</a>
-          <a href="javascript:;">蜜月</a>
         </div>
         <div class="foot">
           <p>重置</p>
@@ -66,6 +95,9 @@
 </script>
 
 <style scoped>
+  .dian_maxbox{
+    position: relative;
+  }
 .dian_wan{
   width:100%;
   min-height: 3.45rem;
@@ -105,7 +137,8 @@
     display: flex;
     flex-wrap: wrap;
     width:100%;
-    /*padding:0 0.1rem;*/
+    background: #ffffff;
+    position: absolute;
     margin-bottom: 0.32rem;
   }
   .dian_center a{
@@ -130,6 +163,9 @@
     width:100%;
     display: flex;
     align-items: center;
+    position: absolute;
+    bottom: 0;
+    background: #ffffff;
   }
   .foot p{
     width:50%;

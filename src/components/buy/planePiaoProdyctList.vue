@@ -1,6 +1,6 @@
 <template>
   <ul class="uls">
-      <plane-piao-product v-for="l in list" :items="l"></plane-piao-product>
+      <plane-piao-product v-for="(l,index) in list" :items="l" :fid="pid" :idx="index"></plane-piao-product>
   </ul>
 </template>
 
@@ -9,7 +9,7 @@
     export default {
         name: "planePiaoProdyctList",
       components: {PlanePiaoProduct},
-      props:['list']
+      props:['list',"pid"]
     }
 </script>
 

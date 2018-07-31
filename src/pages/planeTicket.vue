@@ -57,6 +57,7 @@
       },
       mounted(){
         window.addEventListener("scroll",this.handleScroll,true)
+
       },
       destroyed(){
         window.removeEventListener("scroll",this.handleScroll,true)
