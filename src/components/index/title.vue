@@ -2,7 +2,7 @@
     <div>
       <div class="productTitle">
         <a href="#" class="productTitleInfo" v-for="p in title">
-          <img :src="p.imgUrl" alt="图片">
+          <img v-lazy="p.imgUrl" alt="图片">
           <span>{{p.tit}}</span>
         </a>
 
